@@ -1,0 +1,216 @@
+[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc"; @line = 3; @symbol_classdef = [SettingsMenuDelegate,3,6,26]; @symbol_extends<0> = [WatchUi,3,35,42]; @symbol_extends<1> = [Menu2InputDelegate,3,43,61]; ]
+class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc"; @line = 4; @symbol_functiondef = [onSelect,4,13,21]; @symbol_param<0> = [item,4,22,26]; ]
+    function onSelect(item) {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_4_28_20_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 5 8 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_8_19_8_if_stmt:
+        %tmp.1 = lgetv %item;
+        symbol [ item %tmp.1 5 12 16 ];
+        symbol [ getId %tmp.2 5 17 22 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.5 = const :id_units;
+        symbol [ id_units %tmp.5 5 29 37 const ];
+        %tmp.6 = eq %tmp.3 %tmp.5;
+        bf %tmp.6 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_8_19_8_if_false;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_8_19_8_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_39_13_8_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 7 12 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_39_13_8_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_39_13_8_stop" ]
+        %unitMenu.1 = local;
+        symbol [ unitMenu %unitMenu.1 7 16 24 ];
+        symbol [ WatchUi %tmp.9 7 31 38 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ Menu2 %tmp.10 7 39 44 ];
+        %tmp.10 = getv function ? %tmp.9 :Menu2;
+        %tmp.11 = newd 1;
+        %tmp.13 = const :title;
+        symbol [ title %tmp.13 7 47 52 const ];
+        %tmp.14 = "Select Unit";
+        %tmp.15 = dup %tmp.11;
+        %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+        %tmp.7 = newc %tmp.10 (%tmp.16);
+        lputv %unitMenu.1 %tmp.7;
+        symbol [ unitMenu %unitMenu.1 7 16 24 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 8 12 ]
+        for @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_test @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_incr @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_init:
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_begin" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 8 21 22 ];
+        %tmp.17 = 0;
+        lputv %i.2 %tmp.17;
+        symbol [ i %i.2 8 21 22 ];
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_test:
+        %tmp.18 = lgetv %i.2;
+        symbol [ i %tmp.18 8 28 29 ];
+        symbol [ AppConfig %tmp.20 8 32 41 ];
+        %tmp.20 = getv ? :AppConfig;
+        symbol [ UNIT_MODELS %tmp.21 8 42 53 ];
+        %tmp.21 = getv %tmp.20 :UNIT_MODELS;
+        symbol [ size %tmp.22 8 54 58 ];
+        %tmp.22 = getv function %tmp.21 :size;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = lt %tmp.18 %tmp.23;
+        bf %tmp.24 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_begin:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_67_10_12_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 9 16 ]
+        %tmp.25 = lgetv %unitMenu.1;
+        symbol [ unitMenu %tmp.25 9 16 24 ];
+        symbol [ addItem %tmp.26 9 25 32 ];
+        %tmp.26 = getv function %tmp.25 :addItem;
+        symbol [ WatchUi %tmp.29 9 37 44 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.30 9 45 53 ];
+        %tmp.30 = getv function ? %tmp.29 :MenuItem;
+        symbol [ AppConfig %tmp.32 9 54 63 ];
+        %tmp.32 = getv ? :AppConfig;
+        symbol [ UNIT_MODELS %tmp.33 9 64 75 ];
+        %tmp.33 = getv %tmp.32 :UNIT_MODELS;
+        %tmp.34 = lgetv %i.2;
+        symbol [ i %tmp.34 9 76 77 ];
+        %tmp.35 = agetv %tmp.33 %tmp.34;
+        %tmp.37 = const :label;
+        symbol [ label %tmp.37 9 80 85 const ];
+        %tmp.38 = agetv %tmp.35 %tmp.37;
+        symbol [ AppConfig %tmp.40 9 88 97 ];
+        %tmp.40 = getv ? :AppConfig;
+        symbol [ UNIT_MODELS %tmp.41 9 98 109 ];
+        %tmp.41 = getv %tmp.40 :UNIT_MODELS;
+        %tmp.42 = lgetv %i.2;
+        symbol [ i %tmp.42 9 110 111 ];
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        %tmp.45 = const :suffix;
+        symbol [ suffix %tmp.45 9 114 120 const ];
+        %tmp.46 = agetv %tmp.43 %tmp.45;
+        %tmp.47 = lgetv %i.2;
+        symbol [ i %tmp.47 9 123 124 ];
+        %tmp.48 = newd 0;
+        %tmp.27 = newc %tmp.30 (%tmp.38, %tmp.46, %tmp.47, %tmp.48);
+        invoke %tmp.25 %tmp.26(%tmp.27);
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_67_10_12_stop:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_incr:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 8 ]
+        %tmp.51 = lgetv %i.2;
+        symbol [ i %tmp.51 8 62 63 ];
+        %tmp.52 = add %tmp.51 1;
+        lputv %i.2 %tmp.52;
+        symbol [ i %i.2 8 62 63 ];
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_test;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_8_12_10_12_for_end:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 11 12 ]
+        symbol [ WatchUi %tmp.53 11 12 19 ];
+        %tmp.53 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.54 11 20 28 ];
+        %tmp.54 = getv function %tmp.53 :pushView;
+        %tmp.55 = lgetv %unitMenu.1;
+        symbol [ unitMenu %tmp.55 11 29 37 ];
+        symbol [ UnitSelectionDelegate %tmp.59 11 43 64 ];
+        %tmp.59 = getv ? :UnitSelectionDelegate;
+        %tmp.56 = newc %tmp.59 ();
+        symbol [ WatchUi %tmp.60 11 68 75 ];
+        %tmp.60 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.61 11 76 86 ];
+        %tmp.61 = getv %tmp.60 :SLIDE_LEFT;
+        invoke %tmp.53 %tmp.54(%tmp.55, %tmp.56, %tmp.61);
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_39_13_8_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_8_19_8_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_8_19_8_if_false:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 13 15 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_15_19_8_if_stmt:
+        %tmp.62 = lgetv %item;
+        symbol [ item %tmp.62 13 19 23 ];
+        symbol [ getId %tmp.63 13 24 29 ];
+        %tmp.63 = getv function %tmp.62 :getId;
+        %tmp.64 = invoke %tmp.62 %tmp.63();
+        %tmp.66 = const :id_pace;
+        symbol [ id_pace %tmp.66 13 36 43 const ];
+        %tmp.67 = eq %tmp.64 %tmp.66;
+        bf %tmp.67 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_15_19_8_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_15_19_8_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_45_19_8_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 15 12 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_45_19_8_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_45_19_8_stop" ]
+        %paceMenu.3 = local;
+        symbol [ paceMenu %paceMenu.3 15 16 24 ];
+        symbol [ WatchUi %tmp.70 15 31 38 ];
+        %tmp.70 = getm $.Toybox.WatchUi;
+        symbol [ Menu2 %tmp.71 15 39 44 ];
+        %tmp.71 = getv function ? %tmp.70 :Menu2;
+        %tmp.72 = newd 1;
+        %tmp.74 = const :title;
+        symbol [ title %tmp.74 15 47 52 const ];
+        %tmp.75 = "Adjust Pace";
+        %tmp.76 = dup %tmp.72;
+        %tmp.77 = aputv %tmp.76 %tmp.74 %tmp.75;
+        %tmp.68 = newc %tmp.71 (%tmp.77);
+        lputv %paceMenu.3 %tmp.68;
+        symbol [ paceMenu %paceMenu.3 15 16 24 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 16 12 ]
+        %tmp.78 = lgetv %paceMenu.3;
+        symbol [ paceMenu %tmp.78 16 12 20 ];
+        symbol [ addItem %tmp.79 16 21 28 ];
+        %tmp.79 = getv function %tmp.78 :addItem;
+        symbol [ WatchUi %tmp.82 16 33 40 ];
+        %tmp.82 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.83 16 41 49 ];
+        %tmp.83 = getv function ? %tmp.82 :MenuItem;
+        %tmp.84 = "+5 Seconds";
+        %tmp.85 = "";
+        %tmp.87 = const :plus;
+        symbol [ plus %tmp.87 16 69 73 const ];
+        %tmp.88 = newd 0;
+        %tmp.80 = newc %tmp.83 (%tmp.84, %tmp.85, %tmp.87, %tmp.88);
+        invoke %tmp.78 %tmp.79(%tmp.80);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 17 12 ]
+        %tmp.89 = lgetv %paceMenu.3;
+        symbol [ paceMenu %tmp.89 17 12 20 ];
+        symbol [ addItem %tmp.90 17 21 28 ];
+        %tmp.90 = getv function %tmp.89 :addItem;
+        symbol [ WatchUi %tmp.93 17 33 40 ];
+        %tmp.93 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.94 17 41 49 ];
+        %tmp.94 = getv function ? %tmp.93 :MenuItem;
+        %tmp.95 = "-5 Seconds";
+        %tmp.96 = "";
+        %tmp.98 = const :minus;
+        symbol [ minus %tmp.98 17 69 74 const ];
+        %tmp.99 = newd 0;
+        %tmp.91 = newc %tmp.94 (%tmp.95, %tmp.96, %tmp.98, %tmp.99);
+        invoke %tmp.89 %tmp.90(%tmp.91);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc" 18 12 ]
+        symbol [ WatchUi %tmp.100 18 12 19 ];
+        %tmp.100 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.101 18 20 28 ];
+        %tmp.101 = getv function %tmp.100 :pushView;
+        %tmp.102 = lgetv %paceMenu.3;
+        symbol [ paceMenu %tmp.102 18 29 37 ];
+        symbol [ PaceAdjustDelegate %tmp.106 18 43 61 ];
+        %tmp.106 = getv ? :PaceAdjustDelegate;
+        %tmp.103 = newc %tmp.106 ();
+        symbol [ WatchUi %tmp.107 18 65 72 ];
+        %tmp.107 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.108 18 73 83 ];
+        %tmp.108 = getv %tmp.107 :SLIDE_LEFT;
+        invoke %tmp.100 %tmp.101(%tmp.102, %tmp.103, %tmp.108);
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_45_19_8_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_15_19_8_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_13_15_19_8_if_end:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_5_8_19_8_if_end:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_SettingsMenuDelegate_mc_4_28_20_4_stop:
+    }
+}
+[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\SettingsMenuDelegate.mc"; @line = 1; ]
+<init> {
+}
