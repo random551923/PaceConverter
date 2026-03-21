@@ -79,13 +79,25 @@ class PacePickerDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onNextPage() { // UP button
-        view.adjust(1);
+        view.adjust(-1);
+        WatchUi.requestUpdate();
+        return true;
+    }
+
+    function onNextPageHold() { // UP button HELD (faster decrease)
+        view.adjust(-5);
         WatchUi.requestUpdate();
         return true;
     }
 
     function onPreviousPage() { // DOWN button
-        view.adjust(-1);
+        view.adjust(1);
+        WatchUi.requestUpdate();
+        return true;
+    }
+
+    function onPreviousPageHold() { // DOWN button HELD (faster increase)
+        view.adjust(5);
         WatchUi.requestUpdate();
         return true;
     }
