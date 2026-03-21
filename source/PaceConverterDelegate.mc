@@ -1,7 +1,24 @@
 import Toybox.WatchUi;
 
 class PaceConverterDelegate extends WatchUi.BehaviorDelegate {
-    function initialize(view) { BehaviorDelegate.initialize(); }
+    var view;
+
+    function initialize(paceView) { 
+        BehaviorDelegate.initialize();
+        view = paceView;
+    }
+
+    function onNextPage() { // UP button - scroll up in the distance table
+        view.scrollUp();
+        WatchUi.requestUpdate();
+        return true;
+    }
+
+    function onPreviousPage() { // DOWN button - scroll down in the distance table
+        view.scrollDown();
+        WatchUi.requestUpdate();
+        return true;
+    }
 
     function onMenu() {
         var menu = new WatchUi.Menu2({:title=>"Settings"});
