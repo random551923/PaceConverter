@@ -1,0 +1,18 @@
+# Build output and artifacts
+bin/
+build/
+out/
+
+# JVM crash logs and dumps
+hs_err_pid*.log
+hs_err_pid*.mdmp
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
