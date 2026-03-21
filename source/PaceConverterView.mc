@@ -30,7 +30,7 @@ class PaceConverterView extends WatchUi.View {
         var spacing = height * 0.11;
 
         for (var i = 0; i < 5; i++) {
-            var dist = AppConfig.TRACK_DISTANCES[i];
+            var dist = AppConfig.DISTANCES[i];
             var split = (dist.toFloat() / 1000.0) * totalPaceInSec * unit[:mult];
             
             dc.drawText(width * 0.25, yStart + (i * spacing), Graphics.FONT_TINY, dist + "m:", Graphics.TEXT_JUSTIFY_LEFT);

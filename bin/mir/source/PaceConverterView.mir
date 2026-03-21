@@ -232,10 +232,10 @@ C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PaceConverterView_mc
         symbol [ dist %dist.9 33 16 20 ];
         symbol [ AppConfig %tmp.91 33 23 32 ];
         %tmp.91 = getv ? :AppConfig;
-        symbol [ TRACK_DISTANCES %tmp.92 33 33 48 ];
-        %tmp.92 = getv %tmp.91 :TRACK_DISTANCES;
+        symbol [ DISTANCES %tmp.92 33 33 42 ];
+        %tmp.92 = getv %tmp.91 :DISTANCES;
         %tmp.93 = lgetv %i.8;
-        symbol [ i %tmp.93 33 49 50 ];
+        symbol [ i %tmp.93 33 43 44 ];
         %tmp.94 = agetv %tmp.92 %tmp.93;
         lputv %dist.9 %tmp.94;
         symbol [ dist %dist.9 33 16 20 ];

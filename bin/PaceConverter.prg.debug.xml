@@ -175,6 +175,7 @@
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry id="27" method="true" symbol="toggleFocus"/>
         <entry field="true" id="34" symbol="AppName"/>
+        <entry id="16" symbol="DISTANCES"/>
         <entry id="7" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8389345" symbol="rezId"/>
@@ -211,7 +212,6 @@
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry field="true" id="30" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="16" symbol="TRACK_DISTANCES"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="38" symbol="suffix"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>

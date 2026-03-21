@@ -70,7 +70,7 @@ module AppConfig {
         %tmp.63 = 2000;
         %tmp.64 = dup %tmp.62;
         %tmp.65 = aputv %tmp.64 8 %tmp.63;
-        putv self :TRACK_DISTANCES %tmp.65;
+        putv self :DISTANCES %tmp.65;
     }
     [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\Config.mc"; @line = 2; @position = 8; @symbol_vardef = [currentUnitIndex,2,8,24]; ]
     var currentUnitIndex = 0;
@@ -80,8 +80,8 @@ module AppConfig {
     var globalPaceSec = 0;
     [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\Config.mc"; @line = 6; @position = 10; @symbol_constdef = [UNIT_MODELS,6,10,21]; ]
     const UNIT_MODELS;
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\Config.mc"; @line = 11; @position = 10; @symbol_constdef = [TRACK_DISTANCES,11,10,25]; ]
-    const TRACK_DISTANCES;
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\Config.mc"; @line = 11; @position = 10; @symbol_constdef = [DISTANCES,11,10,19]; ]
+    const DISTANCES;
 }
 [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\Config.mc"; @line = 1; ]
 <init> {

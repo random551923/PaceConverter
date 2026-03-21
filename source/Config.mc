@@ -8,5 +8,5 @@ module AppConfig {
         { :label => "Miles", :suffix => "mi", :mult => 1.60934 }
     ];
 
-    const TRACK_DISTANCES = [100, 200, 400, 800, 1000, 1200, 1500, 1600, 2000];
+    const DISTANCES = [100, 200, 400, 800, 1000, 1200, 1500, 1600, 2000];
 }
