@@ -2,107 +2,123 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 import Toybox.Lang;
 
-// --- 3. CUSTOM NUMBER FACTORY ---
-class NumberFactory extends WatchUi.PickerFactory {
-    var start, stop, step;
+class PacePicker extends WatchUi.View {
+    var minutes;
+    var seconds;
+    var focusOnMinutes = true; // true = mins, false = secs
 
-    function initialize(iStart, iStop, iStep) {
-        PickerFactory.initialize();
-        start = iStart;
-        stop = iStop;
-        step = iStep;
-    }
-
-    function getDrawable(index, selected) {
-        // FR255s safe fonts: Medium for selected, Small for others
-        var font = selected ? Graphics.FONT_MEDIUM : Graphics.FONT_SMALL;
-        var color = selected ? Graphics.COLOR_ORANGE : Graphics.COLOR_WHITE;
-
-        return new WatchUi.Text({
-            :text => Lang.format("$1$", [getValue(index)]),
-            :color => color,
-            :font => font,
-            :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY => WatchUi.LAYOUT_VALIGN_CENTER
-        });
-    }
-
-    function getValue(index) {
-        return start + (index * step);
-    }
-
-    function getSize() {
-        return (stop - start) / step + 1;
-    }
-}
-
-// --- 4. PACE PICKER (Timer Style) ---
-class PacePicker extends WatchUi.Picker {
     function initialize() {
-        var title = new WatchUi.Text({
-            :text=>"Set Pace", 
-            :locX=>WatchUi.LAYOUT_HALIGN_CENTER, 
-            :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, 
-            :color=>Graphics.COLOR_LT_GRAY
-        });
-
-        var minFactory = new NumberFactory(1, 20, 1);
-        var secFactory = new NumberFactory(0, 59, 1);
-        
-        var separator = new WatchUi.Text({
-            :text=>":", 
-            :font=>Graphics.FONT_MEDIUM, 
-            :color=>Graphics.COLOR_ORANGE,
-            :locX => WatchUi.LAYOUT_HALIGN_CENTER,
-            :locY => WatchUi.LAYOUT_VALIGN_CENTER
-        });
-
-        Picker.initialize({
-            :title=>title,
-            :pattern=>[minFactory, separator, secFactory],
-            // Use current pace as the default starting position
-            :defaults=>[AppConfig.globalPaceMin - 1, 0, AppConfig.globalPaceSec]
-        });
+        View.initialize();
+        // Start with current global values
+        minutes = AppConfig.globalPaceMin;
+        seconds = AppConfig.globalPaceSec;
     }
 
     function onUpdate(dc) {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
 
-        // Draw selection highlight lines
-        var cy = dc.getHeight() / 2;
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(2);
-        dc.drawLine(0, cy - 22, dc.getWidth(), cy - 22);
-        dc.drawLine(0, cy + 22, dc.getWidth(), cy + 22);
+        var width = dc.getWidth();
+        var height = dc.getHeight();
 
-        Picker.onUpdate(dc);
+        // 1. Draw Title
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width / 2, height * 0.2, Graphics.FONT_XTINY, "SET PACE", Graphics.TEXT_JUSTIFY_CENTER);
+
+        // 2. Prepare Time Strings
+        var minStr = minutes.format("%02d");
+        var secStr = seconds.format("%02d");
+
+        // 3. Draw the Time (Center)
+        // We split them to color the focused one differently
+        var font = Graphics.FONT_NUMBER_MEDIUM;
+        var spacing = dc.getTextWidthInPixels("00", font) / 2 + 5;
+
+        // Draw Minutes
+        dc.setColor(focusOnMinutes ? Graphics.COLOR_ORANGE : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width/2 - spacing, height/2, font, minStr, Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        // Draw Separator
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width/2, height/2, font, ":", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        // Draw Seconds
+        dc.setColor(!focusOnMinutes ? Graphics.COLOR_ORANGE : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width/2 + spacing, height/2, font, secStr, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        // 4. Instructions at bottom
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        var hint = focusOnMinutes ? "Set Minutes" : "Set Seconds";
+        dc.drawText(width / 2, height * 0.8, Graphics.FONT_XTINY, hint, Graphics.TEXT_JUSTIFY_CENTER);
+    }
+
+    // Adjustment logic with Looping
+    function adjust(amount) {
+        if (focusOnMinutes) {
+            minutes += amount;
+            if (minutes > 20) { minutes = 1; }
+            if (minutes < 1) { minutes = 20; }
+        } else {
+            seconds += amount;
+            if (seconds > 59) { seconds = 0; }
+            if (seconds < 0) { seconds = 59; }
+        }
+    }
+
+    function toggleFocus() {
+        focusOnMinutes = !focusOnMinutes;
     }
 }
 
-// --- 5. PICKER DELEGATE (The Start/Back Logic) ---
-class PacePickerDelegate extends WatchUi.PickerDelegate {
-    function initialize() { PickerDelegate.initialize(); }
+class PacePickerDelegate extends WatchUi.BehaviorDelegate {
+    var view;
 
-    function onAccept(values) {
-        // Explicitly cast to Number to fix "PolyType" error
-        if (values[0] != null) {
-            AppConfig.globalPaceMin = values[0].toNumber();
-        }
-        if (values[2] != null) {
-            AppConfig.globalPaceSec = values[2].toNumber();
-        }
+    function initialize(v) {
+        BehaviorDelegate.initialize();
+        view = v;
+    }
 
-        // Close Picker and Settings Menu
-        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE); 
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
-        
+    function onNextPage() { // UP button
+        view.adjust(1);
         WatchUi.requestUpdate();
         return true;
     }
 
-    function onCancel() {
-        WatchUi.popView(WatchUi.SLIDE_RIGHT);
+    function onPreviousPage() { // DOWN button
+        view.adjust(-1);
+        WatchUi.requestUpdate();
         return true;
+    }
+
+    function onSelect() { // START button
+        if (view.focusOnMinutes) {
+            view.toggleFocus();
+            WatchUi.requestUpdate();
+        } else {
+            // If already on seconds, START acts as "Confirm"
+            saveAndExit();
+        }
+        return true;
+    }
+
+    function onBack() { // BACK button
+        if (!view.focusOnMinutes) {
+            // If on seconds, move back to minutes
+            view.toggleFocus();
+            WatchUi.requestUpdate();
+            return true;
+        }
+        // If on minutes, BACK exits without saving (or saves and exits)
+        return false; 
+    }
+
+    function saveAndExit() {
+        AppConfig.globalPaceMin = view.minutes;
+        AppConfig.globalPaceSec = view.seconds;
+        
+        // Pop the Picker AND the Menu to go back to the main list
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE); // Close Picker
+        WatchUi.popView(WatchUi.SLIDE_RIGHT);     // Close Settings Menu
+        WatchUi.requestUpdate();
     }
 }

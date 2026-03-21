@@ -8,7 +8,8 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
     function onSelect(item) {
         if (item.getId() == :id_pace) {
             // Push the custom Pace Picker
-            WatchUi.pushView(new PacePicker(), new PacePickerDelegate(), WatchUi.SLIDE_LEFT);
+            var pacePicker = new PacePicker();
+            WatchUi.pushView(pacePicker, new PacePickerDelegate(pacePicker), WatchUi.SLIDE_LEFT);
         } else if (item.getId() == :id_units) {
             var unitMenu = new WatchUi.Menu2({:title=>"Select Unit"});
             

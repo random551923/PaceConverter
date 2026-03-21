@@ -4,601 +4,701 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 6; @symbol_classdef = [NumberFactory,6,6,19]; @symbol_extends<0> = [WatchUi,6,28,35]; @symbol_extends<1> = [PickerFactory,6,36,49]; ]
-class NumberFactory extends WatchUi.PickerFactory {
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 6; ]
+[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 5; @symbol_classdef = [PacePicker,5,6,16]; @symbol_extends<0> = [WatchUi,5,25,32]; @symbol_extends<1> = [View,5,33,37]; ]
+class PacePicker extends WatchUi.View {
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 6; ]
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 7; @position = 8; @symbol_vardef = [start,7,8,13]; ]
-    var start;
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 7; @position = 15; @symbol_vardef = [stop,7,15,19]; ]
-    var stop;
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 7; @position = 21; @symbol_vardef = [step,7,21,25]; ]
-    var step;
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; @symbol_param<0> = [iStart,9,24,30]; @symbol_param<1> = [iStop,9,32,37]; @symbol_param<2> = [iStep,9,39,44]; ]
-    function initialize(iStart, iStop, iStep) as Void {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_9_46_14_4_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 10 8 ]
-        symbol [ PickerFactory %tmp.2 10 8 21 ];
-        %tmp.2 = getv ? :PickerFactory;
-        symbol [ initialize %tmp.3 10 22 32 ];
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 6; @position = 8; @symbol_vardef = [minutes,6,8,15]; ]
+    var minutes;
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 7; @position = 8; @symbol_vardef = [seconds,7,8,15]; ]
+    var seconds;
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 8; @position = 8; @symbol_vardef = [focusOnMinutes,8,8,22]; ]
+    var focusOnMinutes = true;
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    function initialize() as Void {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_10_26_15_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 11 8 ]
+        symbol [ View %tmp.2 11 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 11 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 11 8 ]
-        %tmp.4 = lgetv %iStart;
-        symbol [ iStart %tmp.4 11 16 22 ];
-        symbol [ start ? 11 8 13 ];
-        putv self :start %tmp.4;
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 12 8 ]
-        %tmp.5 = lgetv %iStop;
-        symbol [ iStop %tmp.5 12 15 20 ];
-        symbol [ stop ? 12 8 12 ];
-        putv self :stop %tmp.5;
 [ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 13 8 ]
-        %tmp.6 = lgetv %iStep;
-        symbol [ iStep %tmp.6 13 15 20 ];
-        symbol [ step ? 13 8 12 ];
-        putv self :step %tmp.6;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_9_46_14_4_stop:
+        symbol [ AppConfig %tmp.5 13 18 27 ];
+        %tmp.5 = getv ? :AppConfig;
+        symbol [ globalPaceMin %tmp.6 13 28 41 ];
+        %tmp.6 = getv %tmp.5 :globalPaceMin;
+        symbol [ minutes ? 13 8 15 ];
+        putv self :minutes %tmp.6;
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 14 8 ]
+        symbol [ AppConfig %tmp.8 14 18 27 ];
+        %tmp.8 = getv ? :AppConfig;
+        symbol [ globalPaceSec %tmp.9 14 28 41 ];
+        %tmp.9 = getv %tmp.8 :globalPaceSec;
+        symbol [ seconds ? 14 8 15 ];
+        putv self :seconds %tmp.9;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_10_26_15_4_stop:
     }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 16; @symbol_functiondef = [getDrawable,16,13,24]; @symbol_param<0> = [index,16,25,30]; @symbol_param<1> = [selected,16,32,40]; ]
-    function getDrawable(index, selected) {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_16_42_28_4_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 18 8 ]
-        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_16_42_28_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_16_42_28_4_stop" ]
-        %font.1 = local;
-        symbol [ font %font.1 18 12 16 ];
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_begin:
-        %tmp.1 = lgetv %selected;
-        symbol [ selected %tmp.1 18 19 27 ];
-        bf %tmp.1 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_else_false;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_true:
-        symbol [ Graphics %tmp.2 18 30 38 ];
-        %tmp.2 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.3 18 39 50 ];
-        %tmp.3 = getv %tmp.2 :FONT_MEDIUM;
-        push %tmp.3;
-        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_end;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_else_false:
-        symbol [ Graphics %tmp.4 18 53 61 ];
-        %tmp.4 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.5 18 62 72 ];
-        %tmp.5 = getv %tmp.4 :FONT_SMALL;
-        push %tmp.5;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_end:
-        %tmp.6 = phi [%tmp.1 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_begin] [%tmp.3 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_true] [%tmp.5 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_else_false] [%tmp.6 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_18_19_18_62_end];
-        lputv %font.1 %tmp.6;
-        symbol [ font %font.1 18 12 16 ];
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 19 8 ]
-        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_16_42_28_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_16_42_28_4_stop" ]
-        %color.2 = local;
-        symbol [ color %color.2 19 12 17 ];
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_begin:
-        %tmp.7 = lgetv %selected;
-        symbol [ selected %tmp.7 19 20 28 ];
-        bf %tmp.7 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_else_false;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_true:
-        symbol [ Graphics %tmp.8 19 31 39 ];
-        %tmp.8 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.9 19 40 52 ];
-        %tmp.9 = getv %tmp.8 :COLOR_ORANGE;
-        push %tmp.9;
-        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_end;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_else_false:
-        symbol [ Graphics %tmp.10 19 55 63 ];
-        %tmp.10 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.11 19 64 75 ];
-        %tmp.11 = getv %tmp.10 :COLOR_WHITE;
-        push %tmp.11;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_end:
-        %tmp.12 = phi [%tmp.7 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_begin] [%tmp.9 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_true] [%tmp.11 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_else_false] [%tmp.12 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_19_20_19_64_end];
-        lputv %color.2 %tmp.12;
-        symbol [ color %color.2 19 12 17 ];
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 21 8 ]
-        symbol [ WatchUi %tmp.15 21 19 26 ];
-        %tmp.15 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.16 21 27 31 ];
-        %tmp.16 = getv function ? %tmp.15 :Text;
-        %tmp.17 = newd 5;
-        %tmp.19 = const :text;
-        symbol [ text %tmp.19 22 13 17 const ];
-        symbol [ Lang %tmp.20 22 21 25 ];
-        %tmp.20 = getm $.Toybox.Lang;
-        symbol [ format %tmp.21 22 26 32 ];
-        %tmp.21 = getv function %tmp.20 :format;
-        %tmp.22 = "$1$";
-        %tmp.23 = newa 1;
-        %tmp.24 = self;
-        symbol [ getValue %tmp.25 22 41 49 ];
-        %tmp.25 = getv function %tmp.24 :getValue;
-        %tmp.26 = lgetv %index;
-        symbol [ index %tmp.26 22 50 55 ];
-        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
-        %tmp.28 = dup %tmp.23;
-        %tmp.29 = aputv %tmp.28 0 %tmp.27;
-        %tmp.30 = invoke %tmp.20 %tmp.21(%tmp.22, %tmp.29);
-        %tmp.31 = dup %tmp.17;
-        %tmp.32 = aputv %tmp.31 %tmp.19 %tmp.30;
-        %tmp.34 = const :color;
-        symbol [ color %tmp.34 23 13 18 const ];
-        %tmp.35 = lgetv %color.2;
-        symbol [ color %tmp.35 23 22 27 ];
-        %tmp.36 = dup %tmp.32;
-        %tmp.37 = aputv %tmp.36 %tmp.34 %tmp.35;
-        %tmp.39 = const :font;
-        symbol [ font %tmp.39 24 13 17 const ];
-        %tmp.40 = lgetv %font.1;
-        symbol [ font %tmp.40 24 21 25 ];
-        %tmp.41 = dup %tmp.37;
-        %tmp.42 = aputv %tmp.41 %tmp.39 %tmp.40;
-        %tmp.44 = const :locX;
-        symbol [ locX %tmp.44 25 13 17 const ];
-        symbol [ WatchUi %tmp.45 25 21 28 ];
-        %tmp.45 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.46 25 29 49 ];
-        %tmp.46 = getv %tmp.45 :LAYOUT_HALIGN_CENTER;
-        %tmp.47 = dup %tmp.42;
-        %tmp.48 = aputv %tmp.47 %tmp.44 %tmp.46;
-        %tmp.50 = const :locY;
-        symbol [ locY %tmp.50 26 13 17 const ];
-        symbol [ WatchUi %tmp.51 26 21 28 ];
-        %tmp.51 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_CENTER %tmp.52 26 29 49 ];
-        %tmp.52 = getv %tmp.51 :LAYOUT_VALIGN_CENTER;
-        %tmp.53 = dup %tmp.48;
-        %tmp.54 = aputv %tmp.53 %tmp.50 %tmp.52;
-        %tmp.13 = newc %tmp.16 (%tmp.54);
-        ret %tmp.13;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_16_42_28_4_stop:
-    }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 30; @symbol_functiondef = [getValue,30,13,21]; @symbol_param<0> = [index,30,22,27]; ]
-    function getValue(index) {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_30_29_32_4_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 31 8 ]
-        symbol [ start %tmp.2 31 15 20 ];
-        %tmp.2 = getv ? :start;
-        %tmp.3 = lgetv %index;
-        symbol [ index %tmp.3 31 24 29 ];
-        symbol [ step %tmp.5 31 32 36 ];
-        %tmp.5 = getv ? :step;
-        %tmp.6 = mul %tmp.3 %tmp.5;
-        %tmp.7 = add %tmp.2 %tmp.6;
-        ret %tmp.7;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_30_29_32_4_stop:
-    }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 34; @symbol_functiondef = [getSize,34,13,20]; ]
-    function getSize() {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_34_23_36_4_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 35 8 ]
-        symbol [ stop %tmp.2 35 16 20 ];
-        %tmp.2 = getv ? :stop;
-        symbol [ start %tmp.4 35 23 28 ];
-        %tmp.4 = getv ? :start;
-        %tmp.5 = sub %tmp.2 %tmp.4;
-        symbol [ step %tmp.7 35 32 36 ];
-        %tmp.7 = getv ? :step;
-        %tmp.8 = div %tmp.5 %tmp.7;
-        %tmp.9 = 1;
-        %tmp.10 = add %tmp.8 %tmp.9;
-        ret %tmp.10;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_34_23_36_4_stop:
-    }
-}
-[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 40; @symbol_classdef = [PacePicker,40,6,16]; @symbol_extends<0> = [WatchUi,40,25,32]; @symbol_extends<1> = [Picker,40,33,39]; ]
-class PacePicker extends WatchUi.Picker {
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 40; ]
-    <init> {
-    }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 40; ]
-    static
-    <init> {
-    }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 41; @symbol_functiondef = [initialize,41,13,23]; ]
-    function initialize() as Void {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 42 8 ]
-        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_stop" ]
-        %title.1 = local;
-        symbol [ title %title.1 42 12 17 ];
-        symbol [ WatchUi %tmp.3 42 24 31 ];
-        %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.4 42 32 36 ];
-        %tmp.4 = getv function ? %tmp.3 :Text;
-        %tmp.5 = newd 4;
-        %tmp.7 = const :text;
-        symbol [ text %tmp.7 43 13 17 const ];
-        %tmp.8 = "Set Pace";
-        %tmp.9 = dup %tmp.5;
-        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
-        %tmp.12 = const :locX;
-        symbol [ locX %tmp.12 44 13 17 const ];
-        symbol [ WatchUi %tmp.13 44 19 26 ];
-        %tmp.13 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.14 44 27 47 ];
-        %tmp.14 = getv %tmp.13 :LAYOUT_HALIGN_CENTER;
-        %tmp.15 = dup %tmp.10;
-        %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
-        %tmp.18 = const :locY;
-        symbol [ locY %tmp.18 45 13 17 const ];
-        symbol [ WatchUi %tmp.19 45 19 26 ];
-        %tmp.19 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_BOTTOM %tmp.20 45 27 47 ];
-        %tmp.20 = getv %tmp.19 :LAYOUT_VALIGN_BOTTOM;
-        %tmp.21 = dup %tmp.16;
-        %tmp.22 = aputv %tmp.21 %tmp.18 %tmp.20;
-        %tmp.24 = const :color;
-        symbol [ color %tmp.24 46 13 18 const ];
-        symbol [ Graphics %tmp.25 46 20 28 ];
-        %tmp.25 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.26 46 29 42 ];
-        %tmp.26 = getv %tmp.25 :COLOR_LT_GRAY;
-        %tmp.27 = dup %tmp.22;
-        %tmp.28 = aputv %tmp.27 %tmp.24 %tmp.26;
-        %tmp.1 = newc %tmp.4 (%tmp.28);
-        lputv %title.1 %tmp.1;
-        symbol [ title %title.1 42 12 17 ];
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 49 8 ]
-        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_stop" ]
-        %minFactory.2 = local;
-        symbol [ minFactory %minFactory.2 49 12 22 ];
-        symbol [ NumberFactory %tmp.32 49 29 42 ];
-        %tmp.32 = getv ? :NumberFactory;
-        %tmp.33 = 1;
-        %tmp.34 = 20;
-        %tmp.35 = 1;
-        %tmp.29 = newc %tmp.32 (%tmp.33, %tmp.34, %tmp.35);
-        lputv %minFactory.2 %tmp.29;
-        symbol [ minFactory %minFactory.2 49 12 22 ];
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 50 8 ]
-        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_stop" ]
-        %secFactory.3 = local;
-        symbol [ secFactory %secFactory.3 50 12 22 ];
-        symbol [ NumberFactory %tmp.39 50 29 42 ];
-        %tmp.39 = getv ? :NumberFactory;
-        %tmp.40 = 0;
-        %tmp.41 = 59;
-        %tmp.42 = 1;
-        %tmp.36 = newc %tmp.39 (%tmp.40, %tmp.41, %tmp.42);
-        lputv %secFactory.3 %tmp.36;
-        symbol [ secFactory %secFactory.3 50 12 22 ];
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 52 8 ]
-        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_stop" ]
-        %separator.4 = local;
-        symbol [ separator %separator.4 52 12 21 ];
-        symbol [ WatchUi %tmp.45 52 28 35 ];
-        %tmp.45 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.46 52 36 40 ];
-        %tmp.46 = getv function ? %tmp.45 :Text;
-        %tmp.47 = newd 5;
-        %tmp.49 = const :text;
-        symbol [ text %tmp.49 53 13 17 const ];
-        %tmp.50 = ":";
-        %tmp.51 = dup %tmp.47;
-        %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
-        %tmp.54 = const :font;
-        symbol [ font %tmp.54 54 13 17 const ];
-        symbol [ Graphics %tmp.55 54 19 27 ];
-        %tmp.55 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.56 54 28 39 ];
-        %tmp.56 = getv %tmp.55 :FONT_MEDIUM;
-        %tmp.57 = dup %tmp.52;
-        %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
-        %tmp.60 = const :color;
-        symbol [ color %tmp.60 55 13 18 const ];
-        symbol [ Graphics %tmp.61 55 20 28 ];
-        %tmp.61 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.62 55 29 41 ];
-        %tmp.62 = getv %tmp.61 :COLOR_ORANGE;
-        %tmp.63 = dup %tmp.58;
-        %tmp.64 = aputv %tmp.63 %tmp.60 %tmp.62;
-        %tmp.66 = const :locX;
-        symbol [ locX %tmp.66 56 13 17 const ];
-        symbol [ WatchUi %tmp.67 56 21 28 ];
-        %tmp.67 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.68 56 29 49 ];
-        %tmp.68 = getv %tmp.67 :LAYOUT_HALIGN_CENTER;
-        %tmp.69 = dup %tmp.64;
-        %tmp.70 = aputv %tmp.69 %tmp.66 %tmp.68;
-        %tmp.72 = const :locY;
-        symbol [ locY %tmp.72 57 13 17 const ];
-        symbol [ WatchUi %tmp.73 57 21 28 ];
-        %tmp.73 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_CENTER %tmp.74 57 29 49 ];
-        %tmp.74 = getv %tmp.73 :LAYOUT_VALIGN_CENTER;
-        %tmp.75 = dup %tmp.70;
-        %tmp.76 = aputv %tmp.75 %tmp.72 %tmp.74;
-        %tmp.43 = newc %tmp.46 (%tmp.76);
-        lputv %separator.4 %tmp.43;
-        symbol [ separator %separator.4 52 12 21 ];
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 60 8 ]
-        symbol [ Picker %tmp.78 60 8 14 ];
-        %tmp.78 = getv ? :Picker;
-        symbol [ initialize %tmp.79 60 15 25 ];
-        %tmp.79 = getv function %tmp.78 :initialize;
-        %tmp.80 = newd 3;
-        %tmp.82 = const :title;
-        symbol [ title %tmp.82 61 13 18 const ];
-        %tmp.83 = lgetv %title.1;
-        symbol [ title %tmp.83 61 20 25 ];
-        %tmp.84 = dup %tmp.80;
-        %tmp.85 = aputv %tmp.84 %tmp.82 %tmp.83;
-        %tmp.87 = const :pattern;
-        symbol [ pattern %tmp.87 62 13 20 const ];
-        %tmp.88 = newa 3;
-        %tmp.89 = lgetv %minFactory.2;
-        symbol [ minFactory %tmp.89 62 23 33 ];
-        %tmp.90 = dup %tmp.88;
-        %tmp.91 = aputv %tmp.90 0 %tmp.89;
-        %tmp.92 = lgetv %separator.4;
-        symbol [ separator %tmp.92 62 35 44 ];
-        %tmp.93 = dup %tmp.91;
-        %tmp.94 = aputv %tmp.93 1 %tmp.92;
-        %tmp.95 = lgetv %secFactory.3;
-        symbol [ secFactory %tmp.95 62 46 56 ];
-        %tmp.96 = dup %tmp.94;
-        %tmp.97 = aputv %tmp.96 2 %tmp.95;
-        %tmp.98 = dup %tmp.85;
-        %tmp.99 = aputv %tmp.98 %tmp.87 %tmp.97;
-        %tmp.101 = const :defaults;
-        symbol [ defaults %tmp.101 64 13 21 const ];
-        %tmp.102 = newa 3;
-        symbol [ AppConfig %tmp.104 64 24 33 ];
-        %tmp.104 = getv ? :AppConfig;
-        symbol [ globalPaceMin %tmp.105 64 34 47 ];
-        %tmp.105 = getv %tmp.104 :globalPaceMin;
-        %tmp.106 = 1;
-        %tmp.107 = sub %tmp.105 %tmp.106;
-        %tmp.108 = dup %tmp.102;
-        %tmp.109 = aputv %tmp.108 0 %tmp.107;
-        %tmp.110 = 0;
-        %tmp.111 = dup %tmp.109;
-        %tmp.112 = aputv %tmp.111 1 %tmp.110;
-        symbol [ AppConfig %tmp.114 64 56 65 ];
-        %tmp.114 = getv ? :AppConfig;
-        symbol [ globalPaceSec %tmp.115 64 66 79 ];
-        %tmp.115 = getv %tmp.114 :globalPaceSec;
-        %tmp.116 = dup %tmp.112;
-        %tmp.117 = aputv %tmp.116 2 %tmp.115;
-        %tmp.118 = dup %tmp.99;
-        %tmp.119 = aputv %tmp.118 %tmp.101 %tmp.117;
-        invoke %tmp.78 %tmp.79(%tmp.119);
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_41_26_66_4_stop:
-    }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 68; @symbol_functiondef = [onUpdate,68,13,21]; @symbol_param<0> = [dc,68,22,24]; ]
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 17; @symbol_functiondef = [onUpdate,17,13,21]; @symbol_param<0> = [dc,17,22,24]; ]
     function onUpdate(dc) {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_68_26_80_4_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 69 8 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 18 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 69 8 10 ];
-        symbol [ setColor %tmp.2 69 11 19 ];
+        symbol [ dc %tmp.1 18 8 10 ];
+        symbol [ setColor %tmp.2 18 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Graphics %tmp.3 69 20 28 ];
+        symbol [ Graphics %tmp.3 18 20 28 ];
         %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.4 69 29 40 ];
+        symbol [ COLOR_BLACK %tmp.4 18 29 40 ];
         %tmp.4 = getv %tmp.3 :COLOR_BLACK;
-        symbol [ Graphics %tmp.5 69 42 50 ];
+        symbol [ Graphics %tmp.5 18 42 50 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 69 51 62 ];
+        symbol [ COLOR_BLACK %tmp.6 18 51 62 ];
         %tmp.6 = getv %tmp.5 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 70 8 ]
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 19 8 ]
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 70 8 10 ];
-        symbol [ clear %tmp.8 70 11 16 ];
+        symbol [ dc %tmp.7 19 8 10 ];
+        symbol [ clear %tmp.8 19 11 16 ];
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 73 8 ]
-        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_68_26_80_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_68_26_80_4_stop" ]
-        %cy.1 = local;
-        symbol [ cy %cy.1 73 12 14 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 21 8 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 21 12 17 ];
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 73 17 19 ];
-        symbol [ getHeight %tmp.10 73 20 29 ];
-        %tmp.10 = getv function %tmp.9 :getHeight;
+        symbol [ dc %tmp.9 21 20 22 ];
+        symbol [ getWidth %tmp.10 21 23 31 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
         %tmp.11 = invoke %tmp.9 %tmp.10();
-        %tmp.12 = 2;
-        %tmp.13 = div %tmp.11 %tmp.12;
-        lputv %cy.1 %tmp.13;
-        symbol [ cy %cy.1 73 12 14 ];
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 74 8 ]
-        %tmp.14 = lgetv %dc;
-        symbol [ dc %tmp.14 74 8 10 ];
-        symbol [ setColor %tmp.15 74 11 19 ];
-        %tmp.15 = getv function %tmp.14 :setColor;
-        symbol [ Graphics %tmp.16 74 20 28 ];
-        %tmp.16 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.17 74 29 42 ];
-        %tmp.17 = getv %tmp.16 :COLOR_DK_GRAY;
-        symbol [ Graphics %tmp.18 74 44 52 ];
-        %tmp.18 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.19 74 53 70 ];
-        %tmp.19 = getv %tmp.18 :COLOR_TRANSPARENT;
-        invoke %tmp.14 %tmp.15(%tmp.17, %tmp.19);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 75 8 ]
-        %tmp.20 = lgetv %dc;
-        symbol [ dc %tmp.20 75 8 10 ];
-        symbol [ setPenWidth %tmp.21 75 11 22 ];
-        %tmp.21 = getv function %tmp.20 :setPenWidth;
-        %tmp.22 = 2;
-        invoke %tmp.20 %tmp.21(%tmp.22);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 76 8 ]
-        %tmp.23 = lgetv %dc;
-        symbol [ dc %tmp.23 76 8 10 ];
-        symbol [ drawLine %tmp.24 76 11 19 ];
-        %tmp.24 = getv function %tmp.23 :drawLine;
-        %tmp.25 = 0;
-        %tmp.26 = lgetv %cy.1;
-        symbol [ cy %tmp.26 76 23 25 ];
-        %tmp.27 = 22;
-        %tmp.28 = sub %tmp.26 %tmp.27;
-        %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 76 32 34 ];
-        symbol [ getWidth %tmp.30 76 35 43 ];
-        %tmp.30 = getv function %tmp.29 :getWidth;
-        %tmp.31 = invoke %tmp.29 %tmp.30();
-        %tmp.32 = lgetv %cy.1;
-        symbol [ cy %tmp.32 76 47 49 ];
-        %tmp.33 = 22;
-        %tmp.34 = sub %tmp.32 %tmp.33;
-        invoke %tmp.23 %tmp.24(%tmp.25, %tmp.28, %tmp.31, %tmp.34);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 77 8 ]
-        %tmp.35 = lgetv %dc;
-        symbol [ dc %tmp.35 77 8 10 ];
-        symbol [ drawLine %tmp.36 77 11 19 ];
-        %tmp.36 = getv function %tmp.35 :drawLine;
-        %tmp.37 = 0;
-        %tmp.38 = lgetv %cy.1;
-        symbol [ cy %tmp.38 77 23 25 ];
-        %tmp.39 = 22;
-        %tmp.40 = add %tmp.38 %tmp.39;
-        %tmp.41 = lgetv %dc;
-        symbol [ dc %tmp.41 77 32 34 ];
-        symbol [ getWidth %tmp.42 77 35 43 ];
-        %tmp.42 = getv function %tmp.41 :getWidth;
-        %tmp.43 = invoke %tmp.41 %tmp.42();
-        %tmp.44 = lgetv %cy.1;
-        symbol [ cy %tmp.44 77 47 49 ];
-        %tmp.45 = 22;
-        %tmp.46 = add %tmp.44 %tmp.45;
-        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.40, %tmp.43, %tmp.46);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 79 8 ]
-        symbol [ Picker %tmp.48 79 8 14 ];
-        %tmp.48 = getv ? :Picker;
-        symbol [ onUpdate %tmp.49 79 15 23 ];
-        %tmp.49 = getv function %tmp.48 :onUpdate;
-        %tmp.50 = lgetv %dc;
-        symbol [ dc %tmp.50 79 24 26 ];
-        invoke %tmp.48 %tmp.49(%tmp.50);
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_68_26_80_4_stop:
+        lputv %width.1 %tmp.11;
+        symbol [ width %width.1 21 12 17 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 22 8 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 22 12 18 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 22 21 23 ];
+        symbol [ getHeight %tmp.13 22 24 33 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %height.2 %tmp.14;
+        symbol [ height %height.2 22 12 18 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 25 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 25 8 10 ];
+        symbol [ setColor %tmp.16 25 11 19 ];
+        %tmp.16 = getv function %tmp.15 :setColor;
+        symbol [ Graphics %tmp.17 25 20 28 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.18 25 29 42 ];
+        %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.19 25 44 52 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.20 25 53 70 ];
+        %tmp.20 = getv %tmp.19 :COLOR_TRANSPARENT;
+        invoke %tmp.15 %tmp.16(%tmp.18, %tmp.20);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 26 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 26 8 10 ];
+        symbol [ drawText %tmp.22 26 11 19 ];
+        %tmp.22 = getv function %tmp.21 :drawText;
+        %tmp.23 = lgetv %width.1;
+        symbol [ width %tmp.23 26 20 25 ];
+        %tmp.24 = 2;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = lgetv %height.2;
+        symbol [ height %tmp.26 26 31 37 ];
+        %tmp.27 = 0.2;
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        symbol [ Graphics %tmp.29 26 45 53 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.30 26 54 64 ];
+        %tmp.30 = getv %tmp.29 :FONT_XTINY;
+        %tmp.31 = "SET PACE";
+        symbol [ Graphics %tmp.32 26 78 86 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.33 26 87 106 ];
+        %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.21 %tmp.22(%tmp.25, %tmp.28, %tmp.30, %tmp.31, %tmp.33);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 29 8 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop" ]
+        %minStr.3 = local;
+        symbol [ minStr %minStr.3 29 12 18 ];
+        symbol [ minutes %tmp.35 29 21 28 ];
+        %tmp.35 = getv ? :minutes;
+        symbol [ format %tmp.36 29 29 35 ];
+        %tmp.36 = getv function %tmp.35 :format;
+        %tmp.37 = "%02d";
+        %tmp.38 = invoke %tmp.35 %tmp.36(%tmp.37);
+        lputv %minStr.3 %tmp.38;
+        symbol [ minStr %minStr.3 29 12 18 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 30 8 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop" ]
+        %secStr.4 = local;
+        symbol [ secStr %secStr.4 30 12 18 ];
+        symbol [ seconds %tmp.40 30 21 28 ];
+        %tmp.40 = getv ? :seconds;
+        symbol [ format %tmp.41 30 29 35 ];
+        %tmp.41 = getv function %tmp.40 :format;
+        %tmp.42 = "%02d";
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        lputv %secStr.4 %tmp.43;
+        symbol [ secStr %secStr.4 30 12 18 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 34 8 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop" ]
+        %font.5 = local;
+        symbol [ font %font.5 34 12 16 ];
+        symbol [ Graphics %tmp.44 34 19 27 ];
+        %tmp.44 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.45 34 28 46 ];
+        %tmp.45 = getv %tmp.44 :FONT_NUMBER_MEDIUM;
+        lputv %font.5 %tmp.45;
+        symbol [ font %font.5 34 12 16 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 35 8 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop" ]
+        %spacing.6 = local;
+        symbol [ spacing %spacing.6 35 12 19 ];
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 35 22 24 ];
+        symbol [ getTextWidthInPixels %tmp.47 35 25 45 ];
+        %tmp.47 = getv function %tmp.46 :getTextWidthInPixels;
+        %tmp.48 = "00";
+        %tmp.49 = lgetv %font.5;
+        symbol [ font %tmp.49 35 52 56 ];
+        %tmp.50 = invoke %tmp.46 %tmp.47(%tmp.48, %tmp.49);
+        %tmp.51 = 2;
+        %tmp.52 = div %tmp.50 %tmp.51;
+        %tmp.53 = 5;
+        %tmp.54 = add %tmp.52 %tmp.53;
+        lputv %spacing.6 %tmp.54;
+        symbol [ spacing %spacing.6 35 12 19 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 38 8 ]
+        %tmp.55 = lgetv %dc;
+        symbol [ dc %tmp.55 38 8 10 ];
+        symbol [ setColor %tmp.56 38 11 19 ];
+        %tmp.56 = getv function %tmp.55 :setColor;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_begin:
+        symbol [ focusOnMinutes %tmp.58 38 20 34 ];
+        %tmp.58 = getv ? :focusOnMinutes;
+        bf %tmp.58 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_else_false;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_true:
+        symbol [ Graphics %tmp.59 38 37 45 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ COLOR_ORANGE %tmp.60 38 46 58 ];
+        %tmp.60 = getv %tmp.59 :COLOR_ORANGE;
+        push %tmp.60;
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_else_false:
+        symbol [ Graphics %tmp.61 38 61 69 ];
+        %tmp.61 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.62 38 70 81 ];
+        %tmp.62 = getv %tmp.61 :COLOR_WHITE;
+        push %tmp.62;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_end:
+        %tmp.63 = phi [%tmp.58 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_begin] [%tmp.60 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_true] [%tmp.62 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_else_false] [%tmp.63 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_38_20_38_70_end];
+        symbol [ Graphics %tmp.64 38 83 91 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.65 38 92 109 ];
+        %tmp.65 = getv %tmp.64 :COLOR_TRANSPARENT;
+        invoke %tmp.55 %tmp.56(%tmp.63, %tmp.65);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 39 8 ]
+        %tmp.66 = lgetv %dc;
+        symbol [ dc %tmp.66 39 8 10 ];
+        symbol [ drawText %tmp.67 39 11 19 ];
+        %tmp.67 = getv function %tmp.66 :drawText;
+        %tmp.68 = lgetv %width.1;
+        symbol [ width %tmp.68 39 20 25 ];
+        %tmp.69 = 2;
+        %tmp.70 = div %tmp.68 %tmp.69;
+        %tmp.71 = lgetv %spacing.6;
+        symbol [ spacing %tmp.71 39 30 37 ];
+        %tmp.72 = sub %tmp.70 %tmp.71;
+        %tmp.73 = lgetv %height.2;
+        symbol [ height %tmp.73 39 39 45 ];
+        %tmp.74 = 2;
+        %tmp.75 = div %tmp.73 %tmp.74;
+        %tmp.76 = lgetv %font.5;
+        symbol [ font %tmp.76 39 49 53 ];
+        %tmp.77 = lgetv %minStr.3;
+        symbol [ minStr %tmp.77 39 55 61 ];
+        symbol [ Graphics %tmp.78 39 63 71 ];
+        %tmp.78 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.79 39 72 90 ];
+        %tmp.79 = getv %tmp.78 :TEXT_JUSTIFY_RIGHT;
+        symbol [ Graphics %tmp.80 39 93 101 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.81 39 102 122 ];
+        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_VCENTER;
+        %tmp.82 = bitor %tmp.79 %tmp.81;
+        invoke %tmp.66 %tmp.67(%tmp.72, %tmp.75, %tmp.76, %tmp.77, %tmp.82);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 42 8 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 42 8 10 ];
+        symbol [ setColor %tmp.84 42 11 19 ];
+        %tmp.84 = getv function %tmp.83 :setColor;
+        symbol [ Graphics %tmp.85 42 20 28 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.86 42 29 40 ];
+        %tmp.86 = getv %tmp.85 :COLOR_WHITE;
+        symbol [ Graphics %tmp.87 42 42 50 ];
+        %tmp.87 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.88 42 51 68 ];
+        %tmp.88 = getv %tmp.87 :COLOR_TRANSPARENT;
+        invoke %tmp.83 %tmp.84(%tmp.86, %tmp.88);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 43 8 ]
+        %tmp.89 = lgetv %dc;
+        symbol [ dc %tmp.89 43 8 10 ];
+        symbol [ drawText %tmp.90 43 11 19 ];
+        %tmp.90 = getv function %tmp.89 :drawText;
+        %tmp.91 = lgetv %width.1;
+        symbol [ width %tmp.91 43 20 25 ];
+        %tmp.92 = 2;
+        %tmp.93 = div %tmp.91 %tmp.92;
+        %tmp.94 = lgetv %height.2;
+        symbol [ height %tmp.94 43 29 35 ];
+        %tmp.95 = 2;
+        %tmp.96 = div %tmp.94 %tmp.95;
+        %tmp.97 = lgetv %font.5;
+        symbol [ font %tmp.97 43 39 43 ];
+        %tmp.98 = ":";
+        symbol [ Graphics %tmp.99 43 50 58 ];
+        %tmp.99 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.100 43 59 78 ];
+        %tmp.100 = getv %tmp.99 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.101 43 81 89 ];
+        %tmp.101 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.102 43 90 110 ];
+        %tmp.102 = getv %tmp.101 :TEXT_JUSTIFY_VCENTER;
+        %tmp.103 = bitor %tmp.100 %tmp.102;
+        invoke %tmp.89 %tmp.90(%tmp.93, %tmp.96, %tmp.97, %tmp.98, %tmp.103);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 46 8 ]
+        %tmp.104 = lgetv %dc;
+        symbol [ dc %tmp.104 46 8 10 ];
+        symbol [ setColor %tmp.105 46 11 19 ];
+        %tmp.105 = getv function %tmp.104 :setColor;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_begin:
+        symbol [ focusOnMinutes %tmp.107 46 21 35 ];
+        %tmp.107 = getv ? :focusOnMinutes;
+        %tmp.108 = not %tmp.107;
+        bf %tmp.108 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_else_false;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_true:
+        symbol [ Graphics %tmp.109 46 38 46 ];
+        %tmp.109 = getm $.Toybox.Graphics;
+        symbol [ COLOR_ORANGE %tmp.110 46 47 59 ];
+        %tmp.110 = getv %tmp.109 :COLOR_ORANGE;
+        push %tmp.110;
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_else_false:
+        symbol [ Graphics %tmp.111 46 62 70 ];
+        %tmp.111 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.112 46 71 82 ];
+        %tmp.112 = getv %tmp.111 :COLOR_WHITE;
+        push %tmp.112;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_end:
+        %tmp.113 = phi [%tmp.108 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_begin] [%tmp.110 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_true] [%tmp.112 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_else_false] [%tmp.113 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_46_20_46_71_end];
+        symbol [ Graphics %tmp.114 46 84 92 ];
+        %tmp.114 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.115 46 93 110 ];
+        %tmp.115 = getv %tmp.114 :COLOR_TRANSPARENT;
+        invoke %tmp.104 %tmp.105(%tmp.113, %tmp.115);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 47 8 ]
+        %tmp.116 = lgetv %dc;
+        symbol [ dc %tmp.116 47 8 10 ];
+        symbol [ drawText %tmp.117 47 11 19 ];
+        %tmp.117 = getv function %tmp.116 :drawText;
+        %tmp.118 = lgetv %width.1;
+        symbol [ width %tmp.118 47 20 25 ];
+        %tmp.119 = 2;
+        %tmp.120 = div %tmp.118 %tmp.119;
+        %tmp.121 = lgetv %spacing.6;
+        symbol [ spacing %tmp.121 47 30 37 ];
+        %tmp.122 = add %tmp.120 %tmp.121;
+        %tmp.123 = lgetv %height.2;
+        symbol [ height %tmp.123 47 39 45 ];
+        %tmp.124 = 2;
+        %tmp.125 = div %tmp.123 %tmp.124;
+        %tmp.126 = lgetv %font.5;
+        symbol [ font %tmp.126 47 49 53 ];
+        %tmp.127 = lgetv %secStr.4;
+        symbol [ secStr %tmp.127 47 55 61 ];
+        symbol [ Graphics %tmp.128 47 63 71 ];
+        %tmp.128 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.129 47 72 89 ];
+        %tmp.129 = getv %tmp.128 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.130 47 92 100 ];
+        %tmp.130 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.131 47 101 121 ];
+        %tmp.131 = getv %tmp.130 :TEXT_JUSTIFY_VCENTER;
+        %tmp.132 = bitor %tmp.129 %tmp.131;
+        invoke %tmp.116 %tmp.117(%tmp.122, %tmp.125, %tmp.126, %tmp.127, %tmp.132);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 50 8 ]
+        %tmp.133 = lgetv %dc;
+        symbol [ dc %tmp.133 50 8 10 ];
+        symbol [ setColor %tmp.134 50 11 19 ];
+        %tmp.134 = getv function %tmp.133 :setColor;
+        symbol [ Graphics %tmp.135 50 20 28 ];
+        %tmp.135 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.136 50 29 42 ];
+        %tmp.136 = getv %tmp.135 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.137 50 44 52 ];
+        %tmp.137 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.138 50 53 70 ];
+        %tmp.138 = getv %tmp.137 :COLOR_TRANSPARENT;
+        invoke %tmp.133 %tmp.134(%tmp.136, %tmp.138);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 51 8 ]
+        [ "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_start" "C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop" ]
+        %hint.7 = local;
+        symbol [ hint %hint.7 51 12 16 ];
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_begin:
+        symbol [ focusOnMinutes %tmp.140 51 19 33 ];
+        %tmp.140 = getv ? :focusOnMinutes;
+        bf %tmp.140 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_else_false;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_true:
+        %tmp.141 = "Set Minutes";
+        push %tmp.141;
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_else_false:
+        %tmp.142 = "Set Seconds";
+        push %tmp.142;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_end:
+        %tmp.143 = phi [%tmp.140 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_begin] [%tmp.141 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_true] [%tmp.142 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_else_false] [%tmp.143 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_51_19_51_52_end];
+        lputv %hint.7 %tmp.143;
+        symbol [ hint %hint.7 51 12 16 ];
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 52 8 ]
+        %tmp.144 = lgetv %dc;
+        symbol [ dc %tmp.144 52 8 10 ];
+        symbol [ drawText %tmp.145 52 11 19 ];
+        %tmp.145 = getv function %tmp.144 :drawText;
+        %tmp.146 = lgetv %width.1;
+        symbol [ width %tmp.146 52 20 25 ];
+        %tmp.147 = 2;
+        %tmp.148 = div %tmp.146 %tmp.147;
+        %tmp.149 = lgetv %height.2;
+        symbol [ height %tmp.149 52 31 37 ];
+        %tmp.150 = 0.8;
+        %tmp.151 = mul %tmp.149 %tmp.150;
+        symbol [ Graphics %tmp.152 52 45 53 ];
+        %tmp.152 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.153 52 54 64 ];
+        %tmp.153 = getv %tmp.152 :FONT_XTINY;
+        %tmp.154 = lgetv %hint.7;
+        symbol [ hint %tmp.154 52 66 70 ];
+        symbol [ Graphics %tmp.155 52 72 80 ];
+        %tmp.155 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.156 52 81 100 ];
+        %tmp.156 = getv %tmp.155 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.144 %tmp.145(%tmp.148, %tmp.151, %tmp.153, %tmp.154, %tmp.156);
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_17_26_53_4_stop:
+    }
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 56; @symbol_functiondef = [adjust,56,13,19]; @symbol_param<0> = [amount,56,20,26]; ]
+    function adjust(amount) {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_56_28_66_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 57 8 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_8_65_8_if_stmt:
+        symbol [ focusOnMinutes %tmp.2 57 12 26 ];
+        %tmp.2 = getv ? :focusOnMinutes;
+        bf %tmp.2 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_8_65_8_if_else_false;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_8_65_8_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_28_61_8_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 58 12 ]
+        symbol [ minutes %tmp.3 58 12 19 ];
+        %tmp.3 = getv self :minutes;
+        %tmp.4 = lgetv %amount;
+        symbol [ amount %tmp.4 58 23 29 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        symbol [ minutes ? 58 12 19 ];
+        putv self :minutes dup %tmp.5;
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 59 12 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_59_12_59_45_if_stmt:
+        symbol [ minutes %tmp.7 59 16 23 ];
+        %tmp.7 = getv ? :minutes;
+        %tmp.8 = 20;
+        %tmp.9 = gt %tmp.7 %tmp.8;
+        bf %tmp.9 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_59_12_59_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_59_12_59_45_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_59_30_59_45_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 59 32 ]
+        %tmp.10 = 1;
+        symbol [ minutes ? 59 32 39 ];
+        putv self :minutes %tmp.10;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_59_30_59_45_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_59_12_59_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_59_12_59_45_if_end:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 60 12 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_60_12_60_45_if_stmt:
+        symbol [ minutes %tmp.12 60 16 23 ];
+        %tmp.12 = getv ? :minutes;
+        %tmp.13 = 1;
+        %tmp.14 = lt %tmp.12 %tmp.13;
+        bf %tmp.14 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_60_12_60_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_60_12_60_45_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_60_29_60_45_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 60 31 ]
+        %tmp.15 = 20;
+        symbol [ minutes ? 60 31 38 ];
+        putv self :minutes %tmp.15;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_60_29_60_45_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_60_12_60_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_60_12_60_45_if_end:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_28_61_8_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_8_65_8_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_8_65_8_if_else_false:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_61_15_65_8_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 62 12 ]
+        symbol [ seconds %tmp.16 62 12 19 ];
+        %tmp.16 = getv self :seconds;
+        %tmp.17 = lgetv %amount;
+        symbol [ amount %tmp.17 62 23 29 ];
+        %tmp.18 = add %tmp.16 %tmp.17;
+        symbol [ seconds ? 62 12 19 ];
+        putv self :seconds dup %tmp.18;
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 63 12 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_63_12_63_45_if_stmt:
+        symbol [ seconds %tmp.20 63 16 23 ];
+        %tmp.20 = getv ? :seconds;
+        %tmp.21 = 59;
+        %tmp.22 = gt %tmp.20 %tmp.21;
+        bf %tmp.22 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_63_12_63_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_63_12_63_45_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_63_30_63_45_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 63 32 ]
+        %tmp.23 = 0;
+        symbol [ seconds ? 63 32 39 ];
+        putv self :seconds %tmp.23;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_63_30_63_45_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_63_12_63_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_63_12_63_45_if_end:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 64 12 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_64_12_64_45_if_stmt:
+        symbol [ seconds %tmp.25 64 16 23 ];
+        %tmp.25 = getv ? :seconds;
+        %tmp.26 = 0;
+        %tmp.27 = lt %tmp.25 %tmp.26;
+        bf %tmp.27 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_64_12_64_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_64_12_64_45_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_64_29_64_45_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 64 31 ]
+        %tmp.28 = 59;
+        symbol [ seconds ? 64 31 38 ];
+        putv self :seconds %tmp.28;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_64_29_64_45_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_64_12_64_45_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_64_12_64_45_if_end:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_61_15_65_8_stop:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_57_8_65_8_if_end:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_56_28_66_4_stop:
+    }
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 68; @symbol_functiondef = [toggleFocus,68,13,24]; ]
+    function toggleFocus() {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_68_27_70_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 69 8 ]
+        symbol [ focusOnMinutes %tmp.2 69 26 40 ];
+        %tmp.2 = getv ? :focusOnMinutes;
+        %tmp.3 = not %tmp.2;
+        symbol [ focusOnMinutes ? 69 8 22 ];
+        putv self :focusOnMinutes %tmp.3;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_68_27_70_4_stop:
     }
 }
-[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 84; @symbol_classdef = [PacePickerDelegate,84,6,24]; @symbol_extends<0> = [WatchUi,84,33,40]; @symbol_extends<1> = [PickerDelegate,84,41,55]; ]
-class PacePickerDelegate extends WatchUi.PickerDelegate {
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 84; ]
+[ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 73; @symbol_classdef = [PacePickerDelegate,73,6,24]; @symbol_extends<0> = [WatchUi,73,33,40]; @symbol_extends<1> = [BehaviorDelegate,73,41,57]; ]
+class PacePickerDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 73; ]
     <init> {
     }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 84; ]
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 73; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 85; @symbol_functiondef = [initialize,85,13,23]; ]
-    function initialize() as Void {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_85_26_85_57_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 85 28 ]
-        symbol [ PickerDelegate %tmp.2 85 28 42 ];
-        %tmp.2 = getv ? :PickerDelegate;
-        symbol [ initialize %tmp.3 85 43 53 ];
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 74; @position = 8; @symbol_vardef = [view,74,8,12]; ]
+    var view;
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 76; @symbol_functiondef = [initialize,76,13,23]; @symbol_param<0> = [v,76,24,25]; ]
+    function initialize(v) as Void {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_76_27_79_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 77 8 ]
+        symbol [ BehaviorDelegate %tmp.2 77 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 77 25 35 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_85_26_85_57_stop:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 78 8 ]
+        %tmp.4 = lgetv %v;
+        symbol [ v %tmp.4 78 15 16 ];
+        symbol [ view ? 78 8 12 ];
+        putv self :view %tmp.4;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_76_27_79_4_stop:
     }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 87; @symbol_functiondef = [onAccept,87,13,21]; @symbol_param<0> = [values,87,22,28]; ]
-    function onAccept(values) {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_87_30_102_4_start:
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 81; @symbol_functiondef = [onNextPage,81,13,23]; ]
+    function onNextPage() {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_81_26_85_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 82 8 ]
+        symbol [ view %tmp.2 82 8 12 ];
+        %tmp.2 = getv ? :view;
+        symbol [ adjust %tmp.3 82 13 19 ];
+        %tmp.3 = getv function %tmp.2 :adjust;
+        %tmp.4 = 1;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 83 8 ]
+        symbol [ WatchUi %tmp.5 83 8 15 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.6 83 16 29 ];
+        %tmp.6 = getv function %tmp.5 :requestUpdate;
+        invoke %tmp.5 %tmp.6();
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 84 8 ]
+        %tmp.7 = true;
+        ret %tmp.7;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_81_26_85_4_stop:
+    }
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 87; @symbol_functiondef = [onPreviousPage,87,13,27]; ]
+    function onPreviousPage() {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_87_30_91_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 88 8 ]
+        symbol [ view %tmp.2 88 8 12 ];
+        %tmp.2 = getv ? :view;
+        symbol [ adjust %tmp.3 88 13 19 ];
+        %tmp.3 = getv function %tmp.2 :adjust;
+        %tmp.4 = -1;
+        invoke %tmp.2 %tmp.3(%tmp.4);
 [ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 89 8 ]
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_89_8_91_8_if_stmt:
-        %tmp.1 = lgetv %values;
-        symbol [ values %tmp.1 89 12 18 ];
-        %tmp.2 = 0;
-        %tmp.3 = agetv %tmp.1 %tmp.2;
-        %tmp.4 = null;
-        %tmp.5 = ne %tmp.3 %tmp.4;
-        bf %tmp.5 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_89_8_91_8_if_end;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_89_8_91_8_if_true:
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_89_31_91_8_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 90 12 ]
-        symbol [ AppConfig %tmp.6 90 12 21 ];
-        %tmp.6 = getv self :AppConfig;
-        %tmp.7 = lgetv %values;
-        symbol [ values %tmp.7 90 38 44 ];
-        %tmp.8 = 0;
-        %tmp.9 = agetv %tmp.7 %tmp.8;
-        symbol [ toNumber %tmp.10 90 48 56 ];
-        %tmp.10 = getv function %tmp.9 :toNumber;
-        %tmp.11 = invoke %tmp.9 %tmp.10();
-        symbol [ globalPaceMin ? 90 22 35 ];
-        putv %tmp.6 :globalPaceMin %tmp.11;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_89_31_91_8_stop:
-        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_89_8_91_8_if_end;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_89_8_91_8_if_end:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 92 8 ]
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_92_8_94_8_if_stmt:
-        %tmp.12 = lgetv %values;
-        symbol [ values %tmp.12 92 12 18 ];
-        %tmp.13 = 2;
-        %tmp.14 = agetv %tmp.12 %tmp.13;
-        %tmp.15 = null;
-        %tmp.16 = ne %tmp.14 %tmp.15;
-        bf %tmp.16 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_92_8_94_8_if_end;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_92_8_94_8_if_true:
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_92_31_94_8_start:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 93 12 ]
-        symbol [ AppConfig %tmp.17 93 12 21 ];
-        %tmp.17 = getv self :AppConfig;
-        %tmp.18 = lgetv %values;
-        symbol [ values %tmp.18 93 38 44 ];
-        %tmp.19 = 2;
-        %tmp.20 = agetv %tmp.18 %tmp.19;
-        symbol [ toNumber %tmp.21 93 48 56 ];
-        %tmp.21 = getv function %tmp.20 :toNumber;
-        %tmp.22 = invoke %tmp.20 %tmp.21();
-        symbol [ globalPaceSec ? 93 22 35 ];
-        putv %tmp.17 :globalPaceSec %tmp.22;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_92_31_94_8_stop:
-        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_92_8_94_8_if_end;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_92_8_94_8_if_end:
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 97 8 ]
-        symbol [ WatchUi %tmp.23 97 8 15 ];
-        %tmp.23 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.24 97 16 23 ];
-        %tmp.24 = getv function %tmp.23 :popView;
-        symbol [ WatchUi %tmp.25 97 24 31 ];
-        %tmp.25 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.26 97 32 47 ];
-        %tmp.26 = getv %tmp.25 :SLIDE_IMMEDIATE;
-        invoke %tmp.23 %tmp.24(%tmp.26);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 98 8 ]
-        symbol [ WatchUi %tmp.27 98 8 15 ];
-        %tmp.27 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.28 98 16 23 ];
-        %tmp.28 = getv function %tmp.27 :popView;
-        symbol [ WatchUi %tmp.29 98 24 31 ];
-        %tmp.29 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.30 98 32 43 ];
-        %tmp.30 = getv %tmp.29 :SLIDE_RIGHT;
-        invoke %tmp.27 %tmp.28(%tmp.30);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 100 8 ]
-        symbol [ WatchUi %tmp.31 100 8 15 ];
-        %tmp.31 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.32 100 16 29 ];
-        %tmp.32 = getv function %tmp.31 :requestUpdate;
-        invoke %tmp.31 %tmp.32();
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 101 8 ]
-        %tmp.33 = true;
-        ret %tmp.33;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_87_30_102_4_stop:
+        symbol [ WatchUi %tmp.5 89 8 15 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.6 89 16 29 ];
+        %tmp.6 = getv function %tmp.5 :requestUpdate;
+        invoke %tmp.5 %tmp.6();
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 90 8 ]
+        %tmp.7 = true;
+        ret %tmp.7;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_87_30_91_4_stop:
     }
-    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 104; @symbol_functiondef = [onCancel,104,13,21]; ]
-    function onCancel() {
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_104_24_107_4_start:
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 93; @symbol_functiondef = [onSelect,93,13,21]; ]
+    function onSelect() {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_93_24_102_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 94 8 ]
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_8_100_8_if_stmt:
+        symbol [ view %tmp.2 94 12 16 ];
+        %tmp.2 = getv ? :view;
+        symbol [ focusOnMinutes %tmp.3 94 17 31 ];
+        %tmp.3 = getv %tmp.2 :focusOnMinutes;
+        bf %tmp.3 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_8_100_8_if_else_false;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_8_100_8_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_33_97_8_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 95 12 ]
+        symbol [ view %tmp.5 95 12 16 ];
+        %tmp.5 = getv ? :view;
+        symbol [ toggleFocus %tmp.6 95 17 28 ];
+        %tmp.6 = getv function %tmp.5 :toggleFocus;
+        invoke %tmp.5 %tmp.6();
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 96 12 ]
+        symbol [ WatchUi %tmp.7 96 12 19 ];
+        %tmp.7 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.8 96 20 33 ];
+        %tmp.8 = getv function %tmp.7 :requestUpdate;
+        invoke %tmp.7 %tmp.8();
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_33_97_8_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_8_100_8_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_8_100_8_if_else_false:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_97_15_100_8_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 99 12 ]
+        %tmp.9 = self;
+        symbol [ saveAndExit %tmp.10 99 12 23 ];
+        %tmp.10 = getv function %tmp.9 :saveAndExit;
+        invoke %tmp.9 %tmp.10();
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_97_15_100_8_stop:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_94_8_100_8_if_end:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 101 8 ]
+        %tmp.11 = true;
+        ret %tmp.11;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_93_24_102_4_stop:
+    }
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 104; @symbol_functiondef = [onBack,104,13,19]; ]
+    function onBack() {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_104_22_113_4_start:
 [ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 105 8 ]
-        symbol [ WatchUi %tmp.1 105 8 15 ];
-        %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.2 105 16 23 ];
-        %tmp.2 = getv function %tmp.1 :popView;
-        symbol [ WatchUi %tmp.3 105 24 31 ];
-        %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.4 105 32 43 ];
-        %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
-        invoke %tmp.1 %tmp.2(%tmp.4);
-[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 106 8 ]
-        %tmp.5 = true;
-        ret %tmp.5;
-C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_104_24_107_4_stop:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_105_8_110_8_if_stmt:
+        symbol [ view %tmp.2 105 13 17 ];
+        %tmp.2 = getv ? :view;
+        symbol [ focusOnMinutes %tmp.3 105 18 32 ];
+        %tmp.3 = getv %tmp.2 :focusOnMinutes;
+        %tmp.4 = not %tmp.3;
+        bf %tmp.4 @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_105_8_110_8_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_105_8_110_8_if_true:
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_105_34_110_8_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 107 12 ]
+        symbol [ view %tmp.6 107 12 16 ];
+        %tmp.6 = getv ? :view;
+        symbol [ toggleFocus %tmp.7 107 17 28 ];
+        %tmp.7 = getv function %tmp.6 :toggleFocus;
+        invoke %tmp.6 %tmp.7();
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 108 12 ]
+        symbol [ WatchUi %tmp.8 108 12 19 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.9 108 20 33 ];
+        %tmp.9 = getv function %tmp.8 :requestUpdate;
+        invoke %tmp.8 %tmp.9();
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 109 12 ]
+        %tmp.10 = true;
+        ret %tmp.10;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_105_34_110_8_stop:
+        goto @C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_105_8_110_8_if_end;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_105_8_110_8_if_end:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 112 8 ]
+        %tmp.11 = false;
+        ret %tmp.11;
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_104_22_113_4_stop:
+    }
+    [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 115; @symbol_functiondef = [saveAndExit,115,13,24]; ]
+    function saveAndExit() {
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_115_27_123_4_start:
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 116 8 ]
+        symbol [ AppConfig %tmp.1 116 8 17 ];
+        %tmp.1 = getv self :AppConfig;
+        symbol [ view %tmp.3 116 34 38 ];
+        %tmp.3 = getv ? :view;
+        symbol [ minutes %tmp.4 116 39 46 ];
+        %tmp.4 = getv %tmp.3 :minutes;
+        symbol [ globalPaceMin ? 116 18 31 ];
+        putv %tmp.1 :globalPaceMin %tmp.4;
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 117 8 ]
+        symbol [ AppConfig %tmp.5 117 8 17 ];
+        %tmp.5 = getv self :AppConfig;
+        symbol [ view %tmp.7 117 34 38 ];
+        %tmp.7 = getv ? :view;
+        symbol [ seconds %tmp.8 117 39 46 ];
+        %tmp.8 = getv %tmp.7 :seconds;
+        symbol [ globalPaceSec ? 117 18 31 ];
+        putv %tmp.5 :globalPaceSec %tmp.8;
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 120 8 ]
+        symbol [ WatchUi %tmp.9 120 8 15 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.10 120 16 23 ];
+        %tmp.10 = getv function %tmp.9 :popView;
+        symbol [ WatchUi %tmp.11 120 24 31 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.12 120 32 47 ];
+        %tmp.12 = getv %tmp.11 :SLIDE_IMMEDIATE;
+        invoke %tmp.9 %tmp.10(%tmp.12);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 121 8 ]
+        symbol [ WatchUi %tmp.13 121 8 15 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.14 121 16 23 ];
+        %tmp.14 = getv function %tmp.13 :popView;
+        symbol [ WatchUi %tmp.15 121 24 31 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.16 121 32 43 ];
+        %tmp.16 = getv %tmp.15 :SLIDE_RIGHT;
+        invoke %tmp.13 %tmp.14(%tmp.16);
+[ "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc" 122 8 ]
+        symbol [ WatchUi %tmp.17 122 8 15 ];
+        %tmp.17 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.18 122 16 29 ];
+        %tmp.18 = getv function %tmp.17 :requestUpdate;
+        invoke %tmp.17 %tmp.18();
+C__Users_cl_user_Documents_Garmin_Apps_PaceConverter_source_PacePicker_mc_115_27_123_4_stop:
     }
 }
 [ @file = "C:\Users\cl-user\Documents\Garmin Apps\PaceConverter\source\PacePicker.mc"; @line = 1; ]

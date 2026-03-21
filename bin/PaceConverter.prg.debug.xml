@@ -5,246 +5,266 @@
         <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="1" lineNum="4" parent="globals/PaceConverterApp" pc="268435460" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\Config.mc" id="2" lineNum="6" parent="globals/AppConfig" pc="268435472" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="3" lineNum="5" parent="globals/SettingsMenuDelegate" pc="268435566" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="4" lineNum="84" parent="globals/PacePickerDelegate" pc="268435578" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="5" lineNum="6" parent="globals/NumberFactory" pc="268435590" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="6" lineNum="26" parent="globals" pc="268435602" symbol="getApp"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="6" lineNum="27" parent="globals" pc="268435612" symbol="getApp"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="7" lineNum="5" parent="globals/PaceConverterView" pc="268435623" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="8" lineNum="40" parent="globals/PacePicker" pc="268435635" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="9" lineNum="27" parent="globals/UnitSelectionDelegate" pc="268435647" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="10" lineNum="7" parent="globals/Rez" pc="268435659" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="11" lineNum="3" parent="globals/PaceConverterDelegate" pc="268435679" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="12" lineNum="11" parent="globals/PaceConverterApp" pc="268435691" symbol="onStart"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="13" lineNum="19" parent="globals/PaceConverterApp" pc="268435694" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="13" lineNum="20" parent="globals/PaceConverterApp" pc="268435697" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="13" lineNum="21" parent="globals/PaceConverterApp" pc="268435717" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="13" lineNum="22" parent="globals/PaceConverterApp" pc="268435739" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="14" lineNum="6" parent="globals/PaceConverterApp" pc="268435754" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="14" lineNum="7" parent="globals/PaceConverterApp" pc="268435756" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="15" lineNum="15" parent="globals/PaceConverterApp" pc="268435769" symbol="onStop"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="6" parent="globals/SettingsMenuDelegate" pc="268435772" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="6" parent="globals/SettingsMenuDelegate" pc="268435774" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="8" parent="globals/SettingsMenuDelegate" pc="268435787" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="9" parent="globals/SettingsMenuDelegate" pc="268435790" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="11" parent="globals/SettingsMenuDelegate" pc="268435806" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="12" parent="globals/SettingsMenuDelegate" pc="268435860" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="13" parent="globals/SettingsMenuDelegate" pc="268435876" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="16" parent="globals/SettingsMenuDelegate" pc="268435916" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="17" parent="globals/SettingsMenuDelegate" pc="268435940" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="18" parent="globals/SettingsMenuDelegate" pc="268435954" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="19" parent="globals/SettingsMenuDelegate" pc="268435979" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="17" lineNum="21" parent="globals/SettingsMenuDelegate" pc="268436028" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="18" lineNum="104" parent="globals/PacePickerDelegate" pc="268436067" symbol="onCancel"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="18" lineNum="105" parent="globals/PacePickerDelegate" pc="268436069" symbol="onCancel"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="18" lineNum="106" parent="globals/PacePickerDelegate" pc="268436084" symbol="onCancel"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="85" parent="globals/PacePickerDelegate" pc="268436086" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="85" parent="globals/PacePickerDelegate" pc="268436088" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="87" parent="globals/PacePickerDelegate" pc="268436101" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="89" parent="globals/PacePickerDelegate" pc="268436103" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="90" parent="globals/PacePickerDelegate" pc="268436111" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="92" parent="globals/PacePickerDelegate" pc="268436136" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="93" parent="globals/PacePickerDelegate" pc="268436145" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="97" parent="globals/PacePickerDelegate" pc="268436171" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="98" parent="globals/PacePickerDelegate" pc="268436185" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="100" parent="globals/PacePickerDelegate" pc="268436200" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="101" parent="globals/PacePickerDelegate" pc="268436211" symbol="onAccept"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="21" lineNum="30" parent="globals/NumberFactory" pc="268436213" symbol="getValue"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="21" lineNum="31" parent="globals/NumberFactory" pc="268436215" symbol="getValue"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="16" parent="globals/NumberFactory" pc="268436230" symbol="getDrawable"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="18" parent="globals/NumberFactory" pc="268436233" symbol="getDrawable"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="19" parent="globals/NumberFactory" pc="268436247" symbol="getDrawable"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="21" parent="globals/NumberFactory" pc="268436267" symbol="getDrawable"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="23" lineNum="34" parent="globals/NumberFactory" pc="268436373" symbol="getSize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="23" lineNum="35" parent="globals/NumberFactory" pc="268436375" symbol="getSize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="24" lineNum="9" parent="globals/NumberFactory" pc="268436396" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="24" lineNum="10" parent="globals/NumberFactory" pc="268436398" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="24" lineNum="11" parent="globals/NumberFactory" pc="268436410" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="24" lineNum="12" parent="globals/NumberFactory" pc="268436419" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="24" lineNum="13" parent="globals/NumberFactory" pc="268436428" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="25" lineNum="6" parent="globals/PaceConverterView" pc="268436438" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="25" lineNum="6" parent="globals/PaceConverterView" pc="268436440" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="8" parent="globals/PaceConverterView" pc="268436453" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="9" parent="globals/PaceConverterView" pc="268436456" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="10" parent="globals/PaceConverterView" pc="268436468" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="12" parent="globals/PaceConverterView" pc="268436476" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="13" parent="globals/PaceConverterView" pc="268436485" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="15" parent="globals/PaceConverterView" pc="268436494" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="16" parent="globals/PaceConverterView" pc="268436515" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="19" parent="globals/PaceConverterView" pc="268436539" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="20" parent="globals/PaceConverterView" pc="268436556" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="25" parent="globals/PaceConverterView" pc="268436627" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="28" parent="globals/PaceConverterView" pc="268436656" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="29" parent="globals/PaceConverterView" pc="268436673" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="30" parent="globals/PaceConverterView" pc="268436683" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="32" parent="globals/PaceConverterView" pc="268436693" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="33" parent="globals/PaceConverterView" pc="268436704" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="34" parent="globals/PaceConverterView" pc="268436718" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="36" parent="globals/PaceConverterView" pc="268436745" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="26" lineNum="37" parent="globals/PaceConverterView" pc="268436783" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="41" parent="globals/PacePicker" pc="268436843" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="42" parent="globals/PacePicker" pc="268436846" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="49" parent="globals/PacePicker" pc="268436919" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="50" parent="globals/PacePicker" pc="268436945" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="52" parent="globals/PacePicker" pc="268436970" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="60" parent="globals/PacePicker" pc="268437051" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="68" parent="globals/PacePicker" pc="268437143" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="69" parent="globals/PacePicker" pc="268437146" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="70" parent="globals/PacePicker" pc="268437158" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="73" parent="globals/PacePicker" pc="268437166" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="74" parent="globals/PacePicker" pc="268437178" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="75" parent="globals/PacePicker" pc="268437194" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="76" parent="globals/PacePicker" pc="268437206" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="77" parent="globals/PacePicker" pc="268437234" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="79" parent="globals/PacePicker" pc="268437262" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="29" lineNum="28" parent="globals/UnitSelectionDelegate" pc="268437279" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="29" lineNum="28" parent="globals/UnitSelectionDelegate" pc="268437281" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="30" parent="globals/UnitSelectionDelegate" pc="268437294" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="31" parent="globals/UnitSelectionDelegate" pc="268437296" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="34" parent="globals/UnitSelectionDelegate" pc="268437315" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="35" parent="globals/UnitSelectionDelegate" pc="268437329" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="37" parent="globals/UnitSelectionDelegate" pc="268437344" symbol="onSelect"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="6" parent="globals/PaceConverterDelegate" pc="268437356" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="7" parent="globals/PaceConverterDelegate" pc="268437359" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="8" parent="globals/PaceConverterDelegate" pc="268437399" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="9" parent="globals/PaceConverterDelegate" pc="268437420" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="12" parent="globals/PaceConverterDelegate" pc="268437460" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="14" parent="globals/PaceConverterDelegate" pc="268437521" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="16" parent="globals/PaceConverterDelegate" pc="268437573" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="17" parent="globals/PaceConverterDelegate" pc="268437608" symbol="onMenu"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="32" lineNum="4" parent="globals/PaceConverterDelegate" pc="268437610" symbol="initialize"/>
-        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="32" lineNum="4" parent="globals/PaceConverterDelegate" pc="268437612" symbol="initialize"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="14" parent="globals/Rez/Layouts" pc="268437625" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="15" parent="globals/Rez/Layouts" pc="268437636" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="17" parent="globals/Rez/Layouts" pc="268437645" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="19" parent="globals/Rez/Layouts" pc="268437748" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="20" parent="globals/Rez/Layouts" pc="268437832" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="22" parent="globals/Rez/Layouts" pc="268437863" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="34" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437878" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437890" symbol="initialize"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437892" symbol="initialize"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268437904" symbol="initialize"/>
-        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437949" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="4" lineNum="73" parent="globals/PacePickerDelegate" pc="268435578" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="5" lineNum="26" parent="globals" pc="268435590" symbol="getApp"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="5" lineNum="27" parent="globals" pc="268435600" symbol="getApp"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="6" lineNum="5" parent="globals/PaceConverterView" pc="268435611" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="7" lineNum="5" parent="globals/PacePicker" pc="268435623" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="8" lineNum="28" parent="globals/UnitSelectionDelegate" pc="268435635" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="9" lineNum="7" parent="globals/Rez" pc="268435647" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="10" lineNum="3" parent="globals/PaceConverterDelegate" pc="268435667" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="11" lineNum="11" parent="globals/PaceConverterApp" pc="268435679" symbol="onStart"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="12" lineNum="19" parent="globals/PaceConverterApp" pc="268435682" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="12" lineNum="20" parent="globals/PaceConverterApp" pc="268435685" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="12" lineNum="21" parent="globals/PaceConverterApp" pc="268435705" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="12" lineNum="22" parent="globals/PaceConverterApp" pc="268435727" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="13" lineNum="6" parent="globals/PaceConverterApp" pc="268435742" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="13" lineNum="7" parent="globals/PaceConverterApp" pc="268435744" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterApp.mc" id="14" lineNum="15" parent="globals/PaceConverterApp" pc="268435757" symbol="onStop"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="15" lineNum="6" parent="globals/SettingsMenuDelegate" pc="268435760" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="15" lineNum="6" parent="globals/SettingsMenuDelegate" pc="268435762" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="8" parent="globals/SettingsMenuDelegate" pc="268435775" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="9" parent="globals/SettingsMenuDelegate" pc="268435778" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="11" parent="globals/SettingsMenuDelegate" pc="268435794" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="12" parent="globals/SettingsMenuDelegate" pc="268435814" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="13" parent="globals/SettingsMenuDelegate" pc="268435854" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="14" parent="globals/SettingsMenuDelegate" pc="268435870" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="17" parent="globals/SettingsMenuDelegate" pc="268435910" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="18" parent="globals/SettingsMenuDelegate" pc="268435934" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="19" parent="globals/SettingsMenuDelegate" pc="268435948" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="20" parent="globals/SettingsMenuDelegate" pc="268435973" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="16" lineNum="22" parent="globals/SettingsMenuDelegate" pc="268436022" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="17" lineNum="104" parent="globals/PacePickerDelegate" pc="268436061" symbol="onBack"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="17" lineNum="105" parent="globals/PacePickerDelegate" pc="268436063" symbol="onBack"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="17" lineNum="107" parent="globals/PacePickerDelegate" pc="268436077" symbol="onBack"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="17" lineNum="108" parent="globals/PacePickerDelegate" pc="268436089" symbol="onBack"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="17" lineNum="109" parent="globals/PacePickerDelegate" pc="268436100" symbol="onBack"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="17" lineNum="112" parent="globals/PacePickerDelegate" pc="268436105" symbol="onBack"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="18" lineNum="87" parent="globals/PacePickerDelegate" pc="268436107" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="18" lineNum="88" parent="globals/PacePickerDelegate" pc="268436109" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="18" lineNum="89" parent="globals/PacePickerDelegate" pc="268436125" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="18" lineNum="90" parent="globals/PacePickerDelegate" pc="268436136" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="115" parent="globals/PacePickerDelegate" pc="268436138" symbol="saveAndExit"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="116" parent="globals/PacePickerDelegate" pc="268436140" symbol="saveAndExit"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="117" parent="globals/PacePickerDelegate" pc="268436162" symbol="saveAndExit"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="120" parent="globals/PacePickerDelegate" pc="268436184" symbol="saveAndExit"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="121" parent="globals/PacePickerDelegate" pc="268436198" symbol="saveAndExit"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="19" lineNum="122" parent="globals/PacePickerDelegate" pc="268436213" symbol="saveAndExit"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="76" parent="globals/PacePickerDelegate" pc="268436225" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="77" parent="globals/PacePickerDelegate" pc="268436227" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="20" lineNum="78" parent="globals/PacePickerDelegate" pc="268436239" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="21" lineNum="81" parent="globals/PacePickerDelegate" pc="268436249" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="21" lineNum="82" parent="globals/PacePickerDelegate" pc="268436251" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="21" lineNum="83" parent="globals/PacePickerDelegate" pc="268436267" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="21" lineNum="84" parent="globals/PacePickerDelegate" pc="268436278" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="93" parent="globals/PacePickerDelegate" pc="268436280" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="94" parent="globals/PacePickerDelegate" pc="268436282" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="95" parent="globals/PacePickerDelegate" pc="268436295" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="96" parent="globals/PacePickerDelegate" pc="268436307" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="99" parent="globals/PacePickerDelegate" pc="268436321" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="22" lineNum="101" parent="globals/PacePickerDelegate" pc="268436328" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="23" lineNum="6" parent="globals/PaceConverterView" pc="268436330" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="23" lineNum="6" parent="globals/PaceConverterView" pc="268436332" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="8" parent="globals/PaceConverterView" pc="268436345" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="9" parent="globals/PaceConverterView" pc="268436348" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="10" parent="globals/PaceConverterView" pc="268436360" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="12" parent="globals/PaceConverterView" pc="268436368" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="13" parent="globals/PaceConverterView" pc="268436377" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="15" parent="globals/PaceConverterView" pc="268436386" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="16" parent="globals/PaceConverterView" pc="268436407" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="19" parent="globals/PaceConverterView" pc="268436431" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="20" parent="globals/PaceConverterView" pc="268436448" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="25" parent="globals/PaceConverterView" pc="268436519" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="28" parent="globals/PaceConverterView" pc="268436548" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="29" parent="globals/PaceConverterView" pc="268436565" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="30" parent="globals/PaceConverterView" pc="268436575" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="32" parent="globals/PaceConverterView" pc="268436585" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="33" parent="globals/PaceConverterView" pc="268436596" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="34" parent="globals/PaceConverterView" pc="268436610" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="36" parent="globals/PaceConverterView" pc="268436637" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterView.mc" id="24" lineNum="37" parent="globals/PaceConverterView" pc="268436675" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="56" parent="globals/PacePicker" pc="268436735" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="57" parent="globals/PacePicker" pc="268436737" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="58" parent="globals/PacePicker" pc="268436745" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="59" parent="globals/PacePicker" pc="268436760" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="59" parent="globals/PacePicker" pc="268436771" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="60" parent="globals/PacePicker" pc="268436783" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="60" parent="globals/PacePicker" pc="268436794" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="62" parent="globals/PacePicker" pc="268436809" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="63" parent="globals/PacePicker" pc="268436824" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="63" parent="globals/PacePicker" pc="268436835" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="64" parent="globals/PacePicker" pc="268436846" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="25" lineNum="64" parent="globals/PacePicker" pc="268436856" symbol="adjust"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="26" lineNum="68" parent="globals/PacePicker" pc="268436869" symbol="toggleFocus"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="26" lineNum="69" parent="globals/PacePicker" pc="268436871" symbol="toggleFocus"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="10" parent="globals/PacePicker" pc="268436885" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="11" parent="globals/PacePicker" pc="268436887" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="13" parent="globals/PacePicker" pc="268436899" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="27" lineNum="14" parent="globals/PacePicker" pc="268436915" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="17" parent="globals/PacePicker" pc="268436932" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="18" parent="globals/PacePicker" pc="268436935" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="19" parent="globals/PacePicker" pc="268436947" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="21" parent="globals/PacePicker" pc="268436955" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="22" parent="globals/PacePicker" pc="268436964" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="25" parent="globals/PacePicker" pc="268436973" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="26" parent="globals/PacePicker" pc="268436990" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="29" parent="globals/PacePicker" pc="268437021" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="30" parent="globals/PacePicker" pc="268437041" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="34" parent="globals/PacePicker" pc="268437061" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="35" parent="globals/PacePicker" pc="268437065" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="38" parent="globals/PacePicker" pc="268437089" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="39" parent="globals/PacePicker" pc="268437122" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="42" parent="globals/PacePicker" pc="268437151" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="43" parent="globals/PacePicker" pc="268437168" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="46" parent="globals/PacePicker" pc="268437197" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="47" parent="globals/PacePicker" pc="268437231" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="50" parent="globals/PacePicker" pc="268437260" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="51" parent="globals/PacePicker" pc="268437276" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PacePicker.mc" id="28" lineNum="52" parent="globals/PacePicker" pc="268437299" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="29" lineNum="29" parent="globals/UnitSelectionDelegate" pc="268437328" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="29" lineNum="29" parent="globals/UnitSelectionDelegate" pc="268437330" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="31" parent="globals/UnitSelectionDelegate" pc="268437343" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="32" parent="globals/UnitSelectionDelegate" pc="268437345" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="35" parent="globals/UnitSelectionDelegate" pc="268437364" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="36" parent="globals/UnitSelectionDelegate" pc="268437378" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterMenuDelegate.mc" id="30" lineNum="38" parent="globals/UnitSelectionDelegate" pc="268437393" symbol="onSelect"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="6" parent="globals/PaceConverterDelegate" pc="268437405" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="7" parent="globals/PaceConverterDelegate" pc="268437408" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="8" parent="globals/PaceConverterDelegate" pc="268437448" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="9" parent="globals/PaceConverterDelegate" pc="268437469" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="12" parent="globals/PaceConverterDelegate" pc="268437509" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="14" parent="globals/PaceConverterDelegate" pc="268437570" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="16" parent="globals/PaceConverterDelegate" pc="268437622" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="31" lineNum="17" parent="globals/PaceConverterDelegate" pc="268437657" symbol="onMenu"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="32" lineNum="4" parent="globals/PaceConverterDelegate" pc="268437659" symbol="initialize"/>
+        <entry filename="C:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\source\\PaceConverterDelegate.mc" id="32" lineNum="4" parent="globals/PaceConverterDelegate" pc="268437661" symbol="initialize"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="14" parent="globals/Rez/Layouts" pc="268437674" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="15" parent="globals/Rez/Layouts" pc="268437685" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="17" parent="globals/Rez/Layouts" pc="268437694" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="19" parent="globals/Rez/Layouts" pc="268437797" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="20" parent="globals/Rez/Layouts" pc="268437881" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="33" lineNum="22" parent="globals/Rez/Layouts" pc="268437912" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="34" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437927" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437939" symbol="initialize"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437941" symbol="initialize"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268437953" symbol="initialize"/>
+        <entry filename="c:\\Users\\cl-user\\Documents\\Garmin Apps\\PaceConverter\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="35" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437998" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="8389626" method="true" symbol="onAccept"/>
         <entry field="true" id="8389346" symbol="text"/>
-        <entry field="true" id="19" symbol="currentUnitIndex"/>
+        <entry field="true" id="8389344" symbol="seconds"/>
+        <entry field="true" id="18" symbol="currentUnitIndex"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="2" module="true" symbol="globals/AppConfig"/>
         <entry id="6" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="26" method="true" symbol="MainLayout"/>
-        <entry id="10" object="true" symbol="PaceConverterApp"/>
+        <entry id="30" method="true" symbol="MainLayout"/>
+        <entry id="9" object="true" symbol="PaceConverterApp"/>
         <entry id="8" module="true" symbol="AppConfig"/>
-        <entry id="15" object="true" symbol="SettingsMenuDelegate"/>
-        <entry field="true" id="18" symbol="UNIT_MODELS"/>
-        <entry id="8389629" method="true" symbol="getValue"/>
+        <entry id="14" object="true" symbol="SettingsMenuDelegate"/>
+        <entry field="true" id="17" symbol="UNIT_MODELS"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="28" symbol="AppName"/>
+        <entry id="25" method="true" symbol="toggleFocus"/>
+        <entry field="true" id="32" symbol="AppName"/>
         <entry id="7" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8389345" symbol="rezId"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
         <entry field="true" id="8389138" symbol="label"/>
         <entry id="3" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="31" symbol="prompt"/>
-        <entry field="true" id="25" symbol="id_monkey"/>
+        <entry field="true" id="35" symbol="prompt"/>
+        <entry field="true" id="29" symbol="id_monkey"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry id="9" object="true" symbol="NumberFactory"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="8389630" method="true" symbol="getSize"/>
-        <entry id="37" symbol="item_2"/>
-        <entry id="36" symbol="item_1"/>
-        <entry id="23" module="true" symbol="Menus"/>
+        <entry id="41" symbol="item_2"/>
+        <entry id="40" symbol="item_1"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="27" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
-        <entry id="35" symbol="id_units"/>
+        <entry id="39" symbol="id_units"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8389349" symbol="justification"/>
-        <entry id="8389644" symbol="defaults"/>
-        <entry id="13" object="true" symbol="PacePicker"/>
-        <entry id="33" symbol="mult"/>
+        <entry field="true" id="24" symbol="focusOnMinutes"/>
+        <entry id="12" object="true" symbol="PacePicker"/>
+        <entry id="21" method="true" symbol="saveAndExit"/>
+        <entry id="37" symbol="mult"/>
         <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="27" object="true" symbol="MainMenu"/>
-        <entry id="11" object="true" symbol="PaceConverterDelegate"/>
-        <entry field="true" id="8388699" method="true" symbol="stop"/>
-        <entry id="8389628" method="true" symbol="getDrawable"/>
-        <entry field="true" id="8391582" symbol="step"/>
+        <entry id="31" object="true" symbol="MainMenu"/>
+        <entry id="10" object="true" symbol="PaceConverterDelegate"/>
         <entry id="8389619" method="true" symbol="onSelect"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="24" symbol="LauncherIcon"/>
+        <entry field="true" id="28" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="17" symbol="TRACK_DISTANCES"/>
+        <entry id="16" symbol="TRACK_DISTANCES"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry id="32" symbol="suffix"/>
+        <entry id="36" symbol="suffix"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
-        <entry id="12" object="true" symbol="PaceConverterView"/>
+        <entry id="11" object="true" symbol="PaceConverterView"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="16" object="true" symbol="UnitSelectionDelegate"/>
-        <entry id="8389541" method="true" symbol="onCancel"/>
+        <entry id="15" object="true" symbol="UnitSelectionDelegate"/>
+        <entry field="true" id="22" symbol="view"/>
+        <entry id="23" method="true" symbol="adjust"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry field="true" id="8389347" symbol="color"/>
-        <entry field="true" id="20" symbol="globalPaceMin"/>
-        <entry id="22" module="true" symbol="Layouts"/>
-        <entry field="true" id="8388698" method="true" symbol="start"/>
-        <entry id="8389643" symbol="pattern"/>
-        <entry id="34" symbol="id_pace"/>
-        <entry field="true" id="21" symbol="globalPaceSec"/>
+        <entry field="true" id="19" symbol="globalPaceMin"/>
+        <entry id="26" module="true" symbol="Layouts"/>
+        <entry field="true" id="8389343" symbol="minutes"/>
+        <entry id="38" symbol="id_pace"/>
+        <entry field="true" id="20" symbol="globalPaceSec"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry field="true" id="8389642" symbol="title"/>
-        <entry id="14" object="true" symbol="PacePickerDelegate"/>
-        <entry field="true" id="30" symbol="menu_label_2"/>
-        <entry field="true" id="29" symbol="menu_label_1"/>
+        <entry id="13" object="true" symbol="PacePickerDelegate"/>
+        <entry field="true" id="34" symbol="menu_label_2"/>
+        <entry field="true" id="33" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
-        <entry endPc="268435753" name="view" stackId="1" startPc="268435697"/>
-        <entry endPc="268435753" name="delegate" stackId="2" startPc="268435697"/>
-        <entry arg="true" endPc="268436066" name="item" stackId="1" startPc="268435787"/>
-        <entry endPc="268436062" name="unitMenu" stackId="2" startPc="268435876"/>
-        <entry endPc="268436027" name="i" stackId="3" startPc="268435940"/>
-        <entry endPc="268436017" name="u" stackId="4" startPc="268435940"/>
-        <entry endPc="268436017" name="displayName" stackId="5" startPc="268435940"/>
-        <entry arg="true" endPc="268436212" name="values" stackId="1" startPc="268436101"/>
-        <entry arg="true" endPc="268436229" name="index" stackId="1" startPc="268436213"/>
-        <entry arg="true" endPc="268436372" name="index" stackId="1" startPc="268436230"/>
-        <entry arg="true" endPc="268436372" name="selected" stackId="2" startPc="268436230"/>
-        <entry endPc="268436372" name="font" stackId="3" startPc="268436233"/>
-        <entry endPc="268436372" name="color" stackId="4" startPc="268436233"/>
-        <entry arg="true" endPc="268436437" name="iStart" stackId="1" startPc="268436396"/>
-        <entry arg="true" endPc="268436437" name="iStop" stackId="2" startPc="268436396"/>
-        <entry arg="true" endPc="268436437" name="iStep" stackId="3" startPc="268436396"/>
-        <entry arg="true" endPc="268436842" name="dc" stackId="1" startPc="268436453"/>
-        <entry endPc="268436841" name="width" stackId="2" startPc="268436456"/>
-        <entry endPc="268436841" name="height" stackId="3" startPc="268436456"/>
-        <entry endPc="268436841" name="unit" stackId="4" startPc="268436456"/>
-        <entry endPc="268436841" name="totalPaceInSec" stackId="5" startPc="268436456"/>
-        <entry endPc="268436841" name="paceStr" stackId="6" startPc="268436456"/>
-        <entry endPc="268436841" name="yStart" stackId="7" startPc="268436456"/>
-        <entry endPc="268436841" name="spacing" stackId="8" startPc="268436456"/>
-        <entry endPc="268436841" name="i" stackId="9" startPc="268436704"/>
-        <entry endPc="268436831" name="dist" stackId="10" startPc="268436704"/>
-        <entry endPc="268436831" name="split" stackId="11" startPc="268436704"/>
-        <entry endPc="268437141" name="title" stackId="1" startPc="268436846"/>
-        <entry endPc="268437141" name="minFactory" stackId="2" startPc="268436846"/>
-        <entry endPc="268437141" name="secFactory" stackId="3" startPc="268436846"/>
-        <entry endPc="268437141" name="separator" stackId="4" startPc="268436846"/>
-        <entry arg="true" endPc="268437278" name="dc" stackId="1" startPc="268437143"/>
-        <entry endPc="268437277" name="cy" stackId="2" startPc="268437146"/>
-        <entry arg="true" endPc="268437355" name="item" stackId="1" startPc="268437294"/>
-        <entry endPc="268437609" name="menu" stackId="1" startPc="268437359"/>
-        <entry endPc="268437609" name="unit" stackId="2" startPc="268437359"/>
-        <entry endPc="268437609" name="paceStr" stackId="3" startPc="268437359"/>
-        <entry arg="true" endPc="268437624" name="view" stackId="1" startPc="268437610"/>
-        <entry arg="true" endPc="268437877" name="dc" stackId="1" startPc="268437625"/>
-        <entry endPc="268437877" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268437636"/>
-        <entry endPc="268437877" name="rez_cmp_local_text_1193959466" stackId="3" startPc="268437636"/>
-        <entry endPc="268437877" name="rez_cmp_local_bitmap_id_monkey" stackId="4" startPc="268437636"/>
+        <entry endPc="268435741" name="view" stackId="1" startPc="268435685"/>
+        <entry endPc="268435741" name="delegate" stackId="2" startPc="268435685"/>
+        <entry arg="true" endPc="268436060" name="item" stackId="1" startPc="268435775"/>
+        <entry endPc="268435850" name="pacePicker" stackId="2" startPc="268435794"/>
+        <entry endPc="268436056" name="unitMenu" stackId="3" startPc="268435870"/>
+        <entry endPc="268436021" name="i" stackId="4" startPc="268435934"/>
+        <entry endPc="268436011" name="u" stackId="5" startPc="268435934"/>
+        <entry endPc="268436011" name="displayName" stackId="6" startPc="268435934"/>
+        <entry arg="true" endPc="268436248" name="v" stackId="1" startPc="268436225"/>
+        <entry arg="true" endPc="268436734" name="dc" stackId="1" startPc="268436345"/>
+        <entry endPc="268436733" name="width" stackId="2" startPc="268436348"/>
+        <entry endPc="268436733" name="height" stackId="3" startPc="268436348"/>
+        <entry endPc="268436733" name="unit" stackId="4" startPc="268436348"/>
+        <entry endPc="268436733" name="totalPaceInSec" stackId="5" startPc="268436348"/>
+        <entry endPc="268436733" name="paceStr" stackId="6" startPc="268436348"/>
+        <entry endPc="268436733" name="yStart" stackId="7" startPc="268436348"/>
+        <entry endPc="268436733" name="spacing" stackId="8" startPc="268436348"/>
+        <entry endPc="268436733" name="i" stackId="9" startPc="268436596"/>
+        <entry endPc="268436723" name="dist" stackId="10" startPc="268436596"/>
+        <entry endPc="268436723" name="split" stackId="11" startPc="268436596"/>
+        <entry arg="true" endPc="268436868" name="amount" stackId="1" startPc="268436735"/>
+        <entry arg="true" endPc="268437327" name="dc" stackId="1" startPc="268436932"/>
+        <entry endPc="268437326" name="width" stackId="2" startPc="268436935"/>
+        <entry endPc="268437326" name="height" stackId="3" startPc="268436935"/>
+        <entry endPc="268437326" name="minStr" stackId="4" startPc="268436935"/>
+        <entry endPc="268437326" name="secStr" stackId="5" startPc="268436935"/>
+        <entry endPc="268437326" name="font" stackId="6" startPc="268436935"/>
+        <entry endPc="268437326" name="spacing" stackId="7" startPc="268436935"/>
+        <entry endPc="268437326" name="hint" stackId="8" startPc="268436935"/>
+        <entry arg="true" endPc="268437404" name="item" stackId="1" startPc="268437343"/>
+        <entry endPc="268437658" name="menu" stackId="1" startPc="268437408"/>
+        <entry endPc="268437658" name="unit" stackId="2" startPc="268437408"/>
+        <entry endPc="268437658" name="paceStr" stackId="3" startPc="268437408"/>
+        <entry arg="true" endPc="268437673" name="view" stackId="1" startPc="268437659"/>
+        <entry arg="true" endPc="268437926" name="dc" stackId="1" startPc="268437674"/>
+        <entry endPc="268437926" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268437685"/>
+        <entry endPc="268437926" name="rez_cmp_local_text_1193959466" stackId="3" startPc="268437685"/>
+        <entry endPc="268437926" name="rez_cmp_local_bitmap_id_monkey" stackId="4" startPc="268437685"/>
     </localVars>
     <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B3993-00"/>
     <annotations>
@@ -257,21 +277,20 @@
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="76" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/PaceConverterApp" offset="206" parentId="globals" symbolId="PaceConverterApp" type="class"/>
-        <dataEntry label="globals/AppConfig" offset="277" parentId="globals" symbolId="AppConfig" type="module"/>
-        <dataEntry label="globals/SettingsMenuDelegate" offset="348" parentId="globals" symbolId="SettingsMenuDelegate" type="class"/>
-        <dataEntry label="globals/PacePickerDelegate" offset="401" parentId="globals" symbolId="PacePickerDelegate" type="class"/>
-        <dataEntry label="globals/NumberFactory" offset="463" parentId="globals" symbolId="NumberFactory" type="class"/>
-        <dataEntry label="globals/PaceConverterView" offset="561" parentId="globals" symbolId="PaceConverterView" type="class"/>
-        <dataEntry label="globals/PacePicker" offset="614" parentId="globals" symbolId="PacePicker" type="class"/>
-        <dataEntry label="globals/UnitSelectionDelegate" offset="667" parentId="globals" symbolId="UnitSelectionDelegate" type="class"/>
-        <dataEntry label="globals/Rez" offset="720" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/PaceConverterDelegate" offset="782" parentId="globals" symbolId="PaceConverterDelegate" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="835" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="879" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="914" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="949" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1011" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/PaceConverterApp" offset="197" parentId="globals" symbolId="PaceConverterApp" type="class"/>
+        <dataEntry label="globals/AppConfig" offset="268" parentId="globals" symbolId="AppConfig" type="module"/>
+        <dataEntry label="globals/SettingsMenuDelegate" offset="339" parentId="globals" symbolId="SettingsMenuDelegate" type="class"/>
+        <dataEntry label="globals/PacePickerDelegate" offset="392" parentId="globals" symbolId="PacePickerDelegate" type="class"/>
+        <dataEntry label="globals/PaceConverterView" offset="490" parentId="globals" symbolId="PaceConverterView" type="class"/>
+        <dataEntry label="globals/PacePicker" offset="543" parentId="globals" symbolId="PacePicker" type="class"/>
+        <dataEntry label="globals/UnitSelectionDelegate" offset="641" parentId="globals" symbolId="UnitSelectionDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="694" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/PaceConverterDelegate" offset="756" parentId="globals" symbolId="PaceConverterDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="809" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="853" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="888" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="923" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="985" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="PaceConverterApp" startPc="268435460">
@@ -286,94 +305,89 @@
         <functionEntry accessMode="public" endPc="268435589" name="&lt;init&gt;" parent="PacePickerDelegate" startPc="268435578">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435601" name="&lt;init&gt;" parent="NumberFactory" startPc="268435590">
+        <functionEntry accessMode="public" endPc="268435610" name="getApp" startPc="268435590">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435622" name="getApp" startPc="268435602">
+        <functionEntry accessMode="public" endPc="268435622" name="&lt;init&gt;" parent="PaceConverterView" startPc="268435611">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435634" name="&lt;init&gt;" parent="PaceConverterView" startPc="268435623">
+        <functionEntry accessMode="public" endPc="268435634" name="&lt;init&gt;" parent="PacePicker" startPc="268435623">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435646" name="&lt;init&gt;" parent="PacePicker" startPc="268435635">
+        <functionEntry accessMode="public" endPc="268435646" name="&lt;init&gt;" parent="UnitSelectionDelegate" startPc="268435635">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435658" name="&lt;init&gt;" parent="UnitSelectionDelegate" startPc="268435647">
+        <functionEntry accessMode="public" endPc="268435666" name="&lt;init&gt;" parent="Rez" startPc="268435647">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435678" name="&lt;init&gt;" parent="Rez" startPc="268435659">
+        <functionEntry accessMode="public" endPc="268435678" name="&lt;init&gt;" parent="PaceConverterDelegate" startPc="268435667">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435690" name="&lt;init&gt;" parent="PaceConverterDelegate" startPc="268435679">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435693" name="onStart" parent="PaceConverterApp" startPc="268435691">
+        <functionEntry accessMode="public" endPc="268435681" name="onStart" parent="PaceConverterApp" startPc="268435679">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435753" name="getInitialView" parent="PaceConverterApp" startPc="268435694">
+        <functionEntry accessMode="public" endPc="268435741" name="getInitialView" parent="PaceConverterApp" startPc="268435682">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435768" name="initialize" parent="PaceConverterApp" startPc="268435754">
+        <functionEntry accessMode="public" endPc="268435756" name="initialize" parent="PaceConverterApp" startPc="268435742">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435771" name="onStop" parent="PaceConverterApp" startPc="268435769">
+        <functionEntry accessMode="public" endPc="268435759" name="onStop" parent="PaceConverterApp" startPc="268435757">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435786" name="initialize" parent="SettingsMenuDelegate" startPc="268435772">
+        <functionEntry accessMode="public" endPc="268435774" name="initialize" parent="SettingsMenuDelegate" startPc="268435760">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436066" name="onSelect" parent="SettingsMenuDelegate" startPc="268435787">
+        <functionEntry accessMode="public" endPc="268436060" name="onSelect" parent="SettingsMenuDelegate" startPc="268435775">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436085" name="onCancel" parent="PacePickerDelegate" startPc="268436067">
+        <functionEntry accessMode="public" endPc="268436106" name="onBack" parent="PacePickerDelegate" startPc="268436061">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436100" name="initialize" parent="PacePickerDelegate" startPc="268436086">
+        <functionEntry accessMode="public" endPc="268436137" name="onPreviousPage" parent="PacePickerDelegate" startPc="268436107">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436212" name="onAccept" parent="PacePickerDelegate" startPc="268436101">
-            <param id="values"/>
+        <functionEntry accessMode="public" endPc="268436224" name="saveAndExit" parent="PacePickerDelegate" startPc="268436138">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436229" name="getValue" parent="NumberFactory" startPc="268436213">
-            <param id="index"/>
+        <functionEntry accessMode="public" endPc="268436248" name="initialize" parent="PacePickerDelegate" startPc="268436225">
+            <param id="v"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436372" name="getDrawable" parent="NumberFactory" startPc="268436230">
-            <param id="index"/>
-            <param id="selected"/>
+        <functionEntry accessMode="public" endPc="268436279" name="onNextPage" parent="PacePickerDelegate" startPc="268436249">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436395" name="getSize" parent="NumberFactory" startPc="268436373">
+        <functionEntry accessMode="public" endPc="268436329" name="onSelect" parent="PacePickerDelegate" startPc="268436280">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436437" name="initialize" parent="NumberFactory" startPc="268436396">
-            <param id="iStart"/>
-            <param id="iStop"/>
-            <param id="iStep"/>
+        <functionEntry accessMode="public" endPc="268436344" name="initialize" parent="PaceConverterView" startPc="268436330">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436452" name="initialize" parent="PaceConverterView" startPc="268436438">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436842" name="onUpdate" parent="PaceConverterView" startPc="268436453">
+        <functionEntry accessMode="public" endPc="268436734" name="onUpdate" parent="PaceConverterView" startPc="268436345">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437142" name="initialize" parent="PacePicker" startPc="268436843">
+        <functionEntry accessMode="public" endPc="268436868" name="adjust" parent="PacePicker" startPc="268436735">
+            <param id="amount"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437278" name="onUpdate" parent="PacePicker" startPc="268437143">
+        <functionEntry accessMode="public" endPc="268436884" name="toggleFocus" parent="PacePicker" startPc="268436869">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436931" name="initialize" parent="PacePicker" startPc="268436885">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437327" name="onUpdate" parent="PacePicker" startPc="268436932">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437293" name="initialize" parent="UnitSelectionDelegate" startPc="268437279">
+        <functionEntry accessMode="public" endPc="268437342" name="initialize" parent="UnitSelectionDelegate" startPc="268437328">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437355" name="onSelect" parent="UnitSelectionDelegate" startPc="268437294">
+        <functionEntry accessMode="public" endPc="268437404" name="onSelect" parent="UnitSelectionDelegate" startPc="268437343">
             <param id="item"/>
             <documentation/>
         </functionEntry>
@@ -389,21 +403,21 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437609" name="onMenu" parent="PaceConverterDelegate" startPc="268437356">
+        <functionEntry accessMode="public" endPc="268437658" name="onMenu" parent="PaceConverterDelegate" startPc="268437405">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437624" name="initialize" parent="PaceConverterDelegate" startPc="268437610">
+        <functionEntry accessMode="public" endPc="268437673" name="initialize" parent="PaceConverterDelegate" startPc="268437659">
             <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437877" name="MainLayout" parent="Layouts" startPc="268437625">
+        <functionEntry accessMode="public" endPc="268437926" name="MainLayout" parent="Layouts" startPc="268437674">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437889" name="&lt;init&gt;" parent="MainMenu" startPc="268437878">
+        <functionEntry accessMode="public" endPc="268437938" name="&lt;init&gt;" parent="MainMenu" startPc="268437927">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437994" name="initialize" parent="MainMenu" startPc="268437890">
+        <functionEntry accessMode="public" endPc="268438043" name="initialize" parent="MainMenu" startPc="268437939">
             <documentation/>
         </functionEntry>
     </functions>
