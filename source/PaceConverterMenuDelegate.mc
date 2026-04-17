@@ -1,5 +1,7 @@
 import Toybox.WatchUi;
 import Toybox.Graphics;
+import Toybox.Application;
+import Toybox.Application.Storage;
 
 // --- 1. SETTINGS MENU LOGIC ---
 class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
@@ -50,6 +52,7 @@ class UnitSelectionDelegate extends WatchUi.Menu2InputDelegate {
 
     function onSelect(item) {
         AppConfig.currentUnitIndex = item.getId();
+        Storage.setValue("unitIdx", AppConfig.currentUnitIndex);
 
         // Pop twice to return to main split screen immediately
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);

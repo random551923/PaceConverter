@@ -2,6 +2,8 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.Timer;
+import Toybox.Application;
+import Toybox.Application.Storage;
 
 class PacePicker extends WatchUi.View {
     var minutes;
@@ -161,8 +163,15 @@ class PacePickerDelegate extends WatchUi.BehaviorDelegate {
     function saveAndExit() {
         scrollTimer.stop();
         startDelayTimer.stop();
+        
         AppConfig.globalPaceMin = view.minutes;
         AppConfig.globalPaceSec = view.seconds;
+        
+        // Immediate save to storage
+        Storage.setValue("paceMin", AppConfig.globalPaceMin);
+        Storage.setValue("paceSec", AppConfig.globalPaceSec);
+        
         WatchUi.popView(WatchUi.SLIDE_RIGHT);
+        
     }
 }
