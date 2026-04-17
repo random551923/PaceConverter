@@ -36,7 +36,7 @@ class PaceConverterView extends WatchUi.View {
         dc.clear();
 
         // Header: Current Pace (e.g., 4:00 /km)
-        dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(AppConfig.PRIMARY_COLOR, Graphics.COLOR_TRANSPARENT);
         var paceStr = Lang.format("$1$:$2$ /$3$", [
             AppConfig.globalPaceMin, 
             AppConfig.globalPaceSec.format("%02d"), 

@@ -35,7 +35,7 @@ class PacePicker extends WatchUi.View {
         var spacing = dc.getTextWidthInPixels("00", font) / 2 + 5;
 
         // Draw Minutes
-        dc.setColor(focusOnMinutes ? Graphics.COLOR_ORANGE : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(focusOnMinutes ? AppConfig.PRIMARY_COLOR : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(width/2 - spacing, height/2, font, minStr, Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         // Draw Separator
@@ -43,7 +43,7 @@ class PacePicker extends WatchUi.View {
         dc.drawText(width/2, height/2, font, ":", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
         // Draw Seconds
-        dc.setColor(!focusOnMinutes ? Graphics.COLOR_ORANGE : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(!focusOnMinutes ? AppConfig.PRIMARY_COLOR : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(width/2 + spacing, height/2, font, secStr, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         // 4. Instructions at bottom
