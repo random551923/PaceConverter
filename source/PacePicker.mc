@@ -164,14 +164,21 @@ class PacePickerDelegate extends WatchUi.BehaviorDelegate {
         scrollTimer.stop();
         startDelayTimer.stop();
         
+        // 1. Update AppConfig
         AppConfig.globalPaceMin = view.minutes;
         AppConfig.globalPaceSec = view.seconds;
         
-        // Immediate save to storage
-        Storage.setValue("paceMin", AppConfig.globalPaceMin);
-        Storage.setValue("paceSec", AppConfig.globalPaceSec);
+        // 2. Persistent Save
+        Application.Storage.setValue("paceMin", AppConfig.globalPaceMin);
+        Application.Storage.setValue("paceSec", AppConfig.globalPaceSec);
         
+        // 3. EXIT BACK TO TABLE (Skip the menu)
+        // If you only pop once, you see the OLD menu. 
+        // We pop twice to go back to the PaceConverterView which refreshes onUpdate.
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE); 
         WatchUi.popView(WatchUi.SLIDE_RIGHT);
+        
+        WatchUi.requestUpdate();
         
     }
 }
