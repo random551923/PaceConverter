@@ -26,6 +26,9 @@ class PaceConverterView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
 
+        // 1. Draw the "Beautiful" Menu Indicator
+        drawMenuIndicator(dc, width, height);
+
         // Header
         dc.setColor(AppConfig.PRIMARY_COLOR, Graphics.COLOR_TRANSPARENT);
         var paceStr = Lang.format("$1$:$2$ /$3$", [
@@ -70,6 +73,33 @@ class PaceConverterView extends WatchUi.View {
             // 3. Split Time: Left-aligned to (Center + half gap)
             dc.drawText(centerX + columnGap, yStart + (i * spacing), tableFont, timeStr, Graphics.TEXT_JUSTIFY_LEFT);
         }
+    }
+
+
+    function drawMenuIndicator(dc, width, height) {
+        // Use a color that is visible but not distracting (LT_GRAY)
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        
+        // Settings for the dots
+        var dotRadius = 2;
+        var dotSpacing = 7.5;
+        var xOffset = (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_ROUND) ? 12 : 6;
+        
+        // Center the dots vertically relative to the middle-left of the screen
+        var xPos = xOffset;
+        var yPos = height / 2;
+
+        // Draw 3 vertical dots (The Garmin "Menu" look)
+        dc.fillCircle(xPos, yPos - dotSpacing, dotRadius);
+        dc.fillCircle(xPos, yPos, dotRadius);
+        dc.fillCircle(xPos, yPos + dotSpacing, dotRadius);
+        
+        // Optional: Draw a very faint curve/arc to match the watch bezel (Premium Look)
+        if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_ROUND) {
+            dc.setPenWidth(2);
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawArc(width/2, height/2, (width/2) - 2, Graphics.ARC_CLOCKWISE, 190, 170);
+        } 
     }
 
     function scrollUp() {
