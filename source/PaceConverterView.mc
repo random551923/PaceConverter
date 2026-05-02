@@ -18,13 +18,6 @@ class PaceConverterView extends WatchUi.View {
         var unit = AppConfig.UNIT_MODELS[AppConfig.currentUnitIndex];
         var totalPaceInSec = (AppConfig.globalPaceMin * 60) + AppConfig.globalPaceSec;
 
-        if (lastPaceMin == AppConfig.globalPaceMin && 
-            lastPaceSec == AppConfig.globalPaceSec && 
-            lastUnitIndex == AppConfig.currentUnitIndex && 
-            lastScrollOffset == scrollOffset) {
-            return; 
-        }
-        
         lastPaceMin = AppConfig.globalPaceMin;
         lastPaceSec = AppConfig.globalPaceSec;
         lastUnitIndex = AppConfig.currentUnitIndex;

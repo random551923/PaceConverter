@@ -19,6 +19,7 @@ class PaceConverterDelegate extends WatchUi.BehaviorDelegate {
         WatchUi.requestUpdate();
         return true;
     }
+
     function onMenu() {
         var menu = new WatchUi.Menu2({:title=>"Settings"});
         var unit = AppConfig.UNIT_MODELS[AppConfig.currentUnitIndex];
