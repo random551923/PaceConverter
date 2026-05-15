@@ -3,7 +3,6 @@ import Toybox.Graphics;
 import Toybox.Application;
 import Toybox.Application.Storage;
 
-// --- 1. SETTINGS MENU LOGIC ---
 class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
     function initialize() {
         Menu2InputDelegate.initialize();
@@ -37,14 +36,13 @@ class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
         }
     }
 
-    // --- ADD THIS PART ---
+    
     function onBack() {
         // This closes the current Settings Menu and returns to the PaceConverterView
         WatchUi.popView(WatchUi.SLIDE_DOWN);
     }
 }
 
-// --- 2. UNIT SELECTION (Auto-Closes) ---
 class UnitSelectionDelegate extends WatchUi.Menu2InputDelegate {
     function initialize() {
         Menu2InputDelegate.initialize();

@@ -6,7 +6,7 @@ class PaceConverterApp extends Application.AppBase {
         AppBase.initialize();
     }
 
-    // onStart() is called on application start up
+   
     function onStart(state) {
         var savedMin = Storage.getValue("paceMin");
         var savedSec = Storage.getValue("paceSec");
@@ -23,14 +23,12 @@ class PaceConverterApp extends Application.AppBase {
         }
     }
 
-    // onStop() is called when your application is exiting
     function onStop(state) {
         Storage.setValue("paceMin", AppConfig.globalPaceMin);
         Storage.setValue("paceSec", AppConfig.globalPaceSec);
         Storage.setValue("unitIdx", AppConfig.currentUnitIndex);
     }
 
-    // Return the initial view and delegate of your application here
     function getInitialView() {
         var view = new PaceConverterView();
         var delegate = new PaceConverterDelegate(view);
