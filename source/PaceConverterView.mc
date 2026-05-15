@@ -77,30 +77,47 @@ class PaceConverterView extends WatchUi.View {
 
 
     function drawMenuIndicator(dc, width, height) {
-        // Use a color that is visible but not distracting (LT_GRAY)
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        
-        // Settings for the dots
-        var dotRadius = 2;
-        var dotSpacing = 7.5;
-        var xOffset = (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_ROUND) ? 12 : 6;
-        
-        // Center the dots vertically relative to the middle-left of the screen
-        var xPos = xOffset;
-        var yPos = height / 2;
-
-        // Draw 3 vertical dots (The Garmin "Menu" look)
-        dc.fillCircle(xPos, yPos - dotSpacing, dotRadius);
-        dc.fillCircle(xPos, yPos, dotRadius);
-        dc.fillCircle(xPos, yPos + dotSpacing, dotRadius);
-        
-        // Optional: Draw a very faint curve/arc to match the watch bezel (Premium Look)
-        if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_ROUND) {
-            dc.setPenWidth(2);
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawArc(width/2, height/2, (width/2) - 2, Graphics.ARC_CLOCKWISE, 190, 170);
-        } 
+    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    
+    // 1. Enable Anti-Aliasing for smooth lines
+    if (dc has :setAntiAlias) {
+        dc.setAntiAlias(true);
     }
+
+    var dotRadius = 2;
+    var dotSpacing = 7.5;
+    
+    // Adjust xOffset slightly for better visual breathing room
+    var isRound = (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_ROUND);
+    var xOffset = isRound ? 12 : 6;
+    
+    var xPos = xOffset;
+    var yPos = height / 2;
+
+    // 2. Draw 3 vertical dots
+    dc.fillCircle(xPos, yPos - dotSpacing, dotRadius);
+    dc.fillCircle(xPos, yPos, dotRadius);
+    dc.fillCircle(xPos, yPos + dotSpacing, dotRadius);
+    
+    // 3. Draw the smooth curve
+    if (isRound) {
+        dc.setPenWidth(2); // Slightly thinner pen often looks smoother
+        
+        // We use a radius that stays just inside the screen boundary
+        var radius = (width / 2) - 4; 
+        var centerX = width / 2;
+        var centerY = height / 2;
+
+        // Draw the arc (180 degrees is the 9 o'clock position)
+        // 192 to 168 gives a nice symmetrical small bracket around the dots
+        dc.drawArc(centerX, centerY, radius, Graphics.ARC_CLOCKWISE, 191, 169);
+    }
+
+    // 4. Always disable Anti-Alias when done to save battery/performance
+    if (dc has :setAntiAlias) {
+        dc.setAntiAlias(false);
+    }
+}
 
     function scrollUp() {
         if (scrollOffset < AppConfig.DISTANCES.size() - 5) {
