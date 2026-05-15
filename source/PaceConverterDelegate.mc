@@ -8,29 +8,57 @@ class PaceConverterDelegate extends WatchUi.BehaviorDelegate {
         view = paceView;
     }
 
-    function onNextPage() { // UP button - scroll up in the distance table
+    // UP button - Scroll table up
+    function onNextPage() { 
         view.scrollUp();
         WatchUi.requestUpdate();
         return true;
     }
 
-    function onPreviousPage() { // DOWN button - scroll down in the distance table
+    // DOWN button - Scroll table down
+    function onPreviousPage() { 
         view.scrollDown();
         WatchUi.requestUpdate();
         return true;
     }
 
+    // MENU button (or tapping the dots) - Open Settings
     function onMenu() {
+        // Create the main settings menu
         var menu = new WatchUi.Menu2({:title=>"Settings"});
-        var unit = AppConfig.UNIT_MODELS[AppConfig.currentUnitIndex];
         
-        // This line ensures we get the LATEST saved pace every time the menu opens
+        // Prepare current unit and pace string for the sub-label
+        var unit = AppConfig.UNIT_MODELS[AppConfig.currentUnitIndex];
         var paceStr = AppConfig.globalPaceMin + ":" + AppConfig.globalPaceSec.format("%02d");
 
-        menu.addItem(new WatchUi.MenuItem("Pace", paceStr + " /" + unit[:suffix], :id_pace, {}));
-        menu.addItem(new WatchUi.MenuItem("Units", unit[:label], :id_units, {}));
+        menu.addItem(new WatchUi.MenuItem(
+            "Pace", 
+            paceStr + " /" + unit[:suffix], 
+            :id_pace, 
+            {}
+        ));
+        
+        menu.addItem(new WatchUi.MenuItem(
+            "Add New Distance", 
+            null, 
+            :id_add_dist, 
+            {}
+        ));
+        
+        menu.addItem(new WatchUi.MenuItem(
+            "Remove Distance", 
+            null, 
+            :id_edit_list, 
+            {}
+        ));
 
+        // Push the menu view with the Delegate located in PaceConverterMenuDelegate.mc
         WatchUi.pushView(menu, new SettingsMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
+    }
+
+    // Select button (Start/Stop) can also trigger the menu if preferred
+    function onSelect() {
+        return onMenu();
     }
 }

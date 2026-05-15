@@ -13,4 +13,10 @@ module AppConfig {
     ];
 
     const DISTANCES = [100, 200, 400, 800, 1000, 1200, 1500, 1600, 2000];
+
+    // These are now just the DEFAULTS
+    const DEFAULT_DISTANCES = [100, 200, 400, 800, 1200, 1500, 1600, 2000];
+    
+    // This will hold the list actually being used by the View
+    var activeDistances = [];
 }
