@@ -1,56 +1,63 @@
 import Toybox.WatchUi;
+import Toybox.Graphics;
+import Toybox.Application;
+import Toybox.Application.Storage;
 
-// --- 1. THE MAIN SETTINGS MENU ---
+// --- 1. SETTINGS MENU LOGIC ---
 class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
-    function initialize() { Menu2InputDelegate.initialize(); }
+    function initialize() {
+        Menu2InputDelegate.initialize();
+    }
 
     function onSelect(item) {
-        if (item.getId() == :id_units) {
-            var unitMenu = new WatchUi.Menu2({:title=>"Select Unit"});
-            // Loop through models to create "Label - Suffix"
+        if (item.getId() == :id_pace) {
+            // Push the custom Pace Picker
+            var pacePicker = new PacePicker();
+            WatchUi.pushView(
+                pacePicker,
+                new PacePickerDelegate(pacePicker),
+                WatchUi.SLIDE_LEFT
+            );
+        } else if (item.getId() == :id_units) {
+            var unitMenu = new WatchUi.Menu2({ :title => "Select Unit" });
+
+            // Loop through UNIT_MODELS for "Label - Suffix"
             for (var i = 0; i < AppConfig.UNIT_MODELS.size(); i++) {
                 var u = AppConfig.UNIT_MODELS[i];
-                unitMenu.addItem(new WatchUi.MenuItem(u[:label] + " - " + u[:suffix], null, i, {}));
+                var displayName = u[:label] + " - " + u[:suffix];
+                unitMenu.addItem(
+                    new WatchUi.MenuItem(displayName, null, i, {})
+                );
             }
-            WatchUi.pushView(unitMenu, new UnitSelectionDelegate(), WatchUi.SLIDE_LEFT);
-
-        } else if (item.getId() == :id_pace) {
-            var paceMenu = new WatchUi.Menu2({:title=>"Adjust Pace"});
-            paceMenu.addItem(new WatchUi.MenuItem("+5 Seconds", "", :plus, {}));
-            paceMenu.addItem(new WatchUi.MenuItem("-5 Seconds", "", :minus, {}));
-            WatchUi.pushView(paceMenu, new PaceAdjustDelegate(), WatchUi.SLIDE_LEFT);
+            WatchUi.pushView(
+                unitMenu,
+                new UnitSelectionDelegate(),
+                WatchUi.SLIDE_LEFT
+            );
         }
+    }
+
+    // --- ADD THIS PART ---
+    function onBack() {
+        // This closes the current Settings Menu and returns to the PaceConverterView
+        WatchUi.popView(WatchUi.SLIDE_DOWN);
     }
 }
 
-// --- 2. THE UNIT PICKER (AUTO-CLOSES) ---
+// --- 2. UNIT SELECTION (Auto-Closes) ---
 class UnitSelectionDelegate extends WatchUi.Menu2InputDelegate {
-    function initialize() { Menu2InputDelegate.initialize(); }
+    function initialize() {
+        Menu2InputDelegate.initialize();
+    }
 
     function onSelect(item) {
         AppConfig.currentUnitIndex = item.getId();
-        
-        // Pop the Unit Menu
-        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE); 
-        // Pop the Settings Menu to go back to main screen
+        Storage.setValue("unitIdx", AppConfig.currentUnitIndex);
+
+        // Pop twice to return to main split screen immediately
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
         WatchUi.popView(WatchUi.SLIDE_RIGHT);
-        
+
         WatchUi.requestUpdate();
-    }
-}
-
-// --- 3. THE PACE ADJUSTER ---
-class PaceAdjustDelegate extends WatchUi.Menu2InputDelegate {
-    function initialize() { Menu2InputDelegate.initialize(); }
-
-    function onSelect(item) {
-        var total = (AppConfig.globalPaceMin * 60) + AppConfig.globalPaceSec;
-        total += (item.getId() == :plus) ? 5 : -5;
-        
-        if (total < 30) { total = 30; }
-        AppConfig.globalPaceMin = total / 60;
-        AppConfig.globalPaceSec = total % 60;
-        
-        WatchUi.requestUpdate(); 
     }
 }
