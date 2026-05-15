@@ -55,7 +55,7 @@ class PaceConverterView extends WatchUi.View {
 
         var tableFont = Graphics.FONT_SMALL;
         var centerX = width / 2;
-        var columnGap = 10; // CONSTANT gap in pixels
+        var columnGap = 8; 
 
         // Get the active distances array
         var dists = AppConfig.activeDistances as Array<Number>;
