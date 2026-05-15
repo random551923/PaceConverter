@@ -19,9 +19,7 @@ class PaceConverterApp extends Application.AppBase {
 
         // Load or Initialize Distance List
         var savedDistances = Storage.getValue("userDistances");
-        if (savedDistances == null) {
-            AppConfig.activeDistances = AppConfig.DEFAULT_DISTANCES;
-        } else {
+        if (savedDistances) {
             AppConfig.activeDistances = savedDistances;
         }
     }

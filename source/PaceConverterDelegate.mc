@@ -46,9 +46,16 @@ class PaceConverterDelegate extends WatchUi.BehaviorDelegate {
         ));
         
         menu.addItem(new WatchUi.MenuItem(
-            "Remove Distance", 
+            "Remove Distance",
             null, 
             :id_edit_list, 
+            {}
+        ));
+
+        menu.addItem(new WatchUi.MenuItem(
+            "Restore Defaults",
+            null, 
+            :id_restore_defaults, 
             {}
         ));
 
